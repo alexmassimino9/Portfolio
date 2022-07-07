@@ -44,17 +44,11 @@ export default function ButtonAppBar() {
           </Button>
           <Button>
             <Link variant="h5" underline="hover" href="#">
-              four
+              Resume
             </Link>
           </Button>
         </ButtonGroup>
       </AppBar>
-      <Container
-        sx={{
-          backgroundColor: "white",
-          height: "150vh",
-        }}
-      ></Container>
     </Box>
   );
 }
