@@ -2,53 +2,38 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import { ButtonGroup, Link, Container } from "@mui/material";
+import { ButtonGroup } from "@mui/material";
+import { Link } from "react-router-dom";
 
-export default function ButtonAppBar() {
+const Navbar = () => {
+  const pages = ["Home", "About", "Contact"];
   return (
-    <Box
+    <AppBar
+      position="sticky"
       sx={{
-        flexGrow: 1,
+        backgroundColor: "lavender",
+        height: "10vh",
+        justifyContent: "center",
       }}
     >
-      <AppBar
-        position="sticky"
+      <ButtonGroup
+        size="large"
+        variant="text"
         sx={{
-          backgroundColor: "lavender",
-          height: "10vh",
-          justifyContent: "center",
+          backgroundColor: "lightgreen",
+          alignSelf: "flex-end",
         }}
       >
-        <ButtonGroup
-          size="large"
-          variant="text"
-          sx={{
-            backgroundColor: "lightgreen",
-            alignSelf: "flex-end",
-          }}
-        >
-          <Button>
-            <Link variant="h5" underline="hover" href="#">
-              Home
-            </Link>
-          </Button>
-          <Button>
-            <Link variant="h5" underline="hover" href="#">
-              About
-            </Link>
-          </Button>
-          <Button>
-            <Link variant="h5" underline="hover" href="#">
-              Contact
-            </Link>
-          </Button>
-          <Button>
-            <Link variant="h5" underline="hover" href="#">
-              Resume
-            </Link>
-          </Button>
-        </ButtonGroup>
-      </AppBar>
-    </Box>
+        {pages.map((page) => (
+          <>
+            <Button>
+              <Link to={`/${page}`}>{page}</Link>
+            </Button>
+          </>
+        ))}
+      </ButtonGroup>
+    </AppBar>
   );
-}
+};
+
+export default Navbar;
