@@ -29,22 +29,22 @@ export default function ButtonAppBar() {
         >
           <Button>
             <Link variant="h5" underline="hover" href="#">
-              one
+              Home
             </Link>
           </Button>
           <Button>
             <Link variant="h5" underline="hover" href="#">
-              one
+              About
             </Link>
           </Button>
           <Button>
             <Link variant="h5" underline="hover" href="#">
-              one
+              Contact
             </Link>
           </Button>
           <Button>
             <Link variant="h5" underline="hover" href="#">
-              one
+              four
             </Link>
           </Button>
         </ButtonGroup>
