@@ -1,18 +1,18 @@
 import { Container } from "@mui/system";
 import React from "react";
 
-const LandingPage = () => {
+const Footer = () => {
   return (
     <Container
       sx={{
-        bgcolor: "red",
-        height: "25vh",
+        bgcolor: "grey",
+        height: "20vh",
         width: "100vw",
       }}
     >
-      landing
+      Footer
     </Container>
   );
 };
 
-export default LandingPage;
+export default Footer;
