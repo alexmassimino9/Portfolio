@@ -4,6 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <Container
+      fixed
       sx={{
         bgcolor: "lightgrey",
         height: "100vh",
