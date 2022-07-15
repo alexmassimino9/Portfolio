@@ -1,18 +1,8 @@
-import { Container } from "@mui/system";
+import { Container } from "@mui/material";
 import React from "react";
 
 const Footer = () => {
-  return (
-    <Container
-      sx={{
-        bgcolor: "grey",
-        height: "20vh",
-        width: "100vw",
-      }}
-    >
-      Footer
-    </Container>
-  );
+  return <Container className="footer">FOOTER</Container>;
 };
 
 export default Footer;

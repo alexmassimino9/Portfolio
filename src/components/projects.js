@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@mui/system";
 
-const About = () => {
+const Projects = () => {
   return (
     <Container
       fixed
@@ -10,15 +10,11 @@ const About = () => {
         bgcolor: "#EDDFB3",
       }}
     >
-      <h1>
-        I'm Alex and I{" "}
-        <em>
-          <s>don't</s>
-        </em>{" "}
-        know what I am doing
-      </h1>
+      <div>
+        <h2>projects</h2>
+      </div>
     </Container>
   );
 };
 
-export default About;
+export default Projects;
