@@ -3,17 +3,31 @@
 --white: #F5F5F5;
 --red: #F05454;
 --blue: #30475E;
---black: #121212
+--black: #121212;
+
 }
 
 @media(min-width: 650px) {
     .main{
         font-size: xx-large;
+        text-transform: capitalize;
+        
     }
+    .bio{
+        border: 1px solid black;
+        width: 40vw;
+    }
+    .btn{
+        font-size: xx-large;
+        padding: 30px;
+    }
+    
 }
 
 html{
  background-color: var(--white);
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+ 
  
 }
 
@@ -49,19 +63,26 @@ html{
     height: auto;
     justify-content: center;
     min-height: 90vh;
+    text-align: center;
   
  
 }
-.main-text{
-  
-}
-.bio{
-    border: 2px solid black;
- 
-    
-}
+
 
 .footer{
     background-color: var(--blue);
     bottom: 0;
+}
+
+.btn{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px;
+
+}
+.btn:hover{
+    background-color: var(--white) ;
+    color: var(--black);
 }
