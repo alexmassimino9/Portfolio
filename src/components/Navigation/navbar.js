@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <AppBar position="sticky">
       <Toolbar className="navbar">
-        <Link to="/" className="link">
+        <Link to="/portfolio/" className="link">
           Home
         </Link>
         {pages.map((page) => {
