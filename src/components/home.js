@@ -1,12 +1,20 @@
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
+import ResumeModal from "./resumeModal";
 
 const Home = () => {
   let navigate = useNavigate();
   const routeChange = () => {
     let path = "/projects";
     navigate(path);
+  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModal = () => {
+    setIsModalOpen((prevState) => {
+      return setIsModalOpen !== isModalOpen;
+    });
+    console.log(isModalOpen);
   };
   return (
     <Box
@@ -34,10 +42,17 @@ const Home = () => {
           </h5>
 
           <h4> Get to know know more about me</h4>
-          <button className="btn" onClick={routeChange}>
+          <button className="btn" onClick={() => routeChange()}>
             projects
           </button>
-          <button className="btn">resume</button>
+          <button
+            className="btn"
+            onClick={() => {
+              handleModal();
+            }}
+          >
+            resume
+          </button>
         </section>
       </main>
     </Box>
