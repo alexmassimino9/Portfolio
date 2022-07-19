@@ -7,16 +7,15 @@
 
 }
 
-@media(min-width: 650px) {
+@media(min-width: 500px) {
     .main{
         font-size: xx-large;
-        text-transform: capitalize;
-        
+        text-transform: capitalize; 
     }
     .bio{
-        border: 1px solid lavender;  /* remove */ 
-        width: 40vw;
+        max-width: 500px;
     }
+   
     .btn{
         font-size: xx-large;
         padding: 30px;
@@ -27,10 +26,11 @@
 html{
  background-color: var(--white);
  font-family: 'Edu VIC WA NT Beginner', cursive;
- -webkit-text-stroke-width: 0.5px;
- -webkit-text-stroke-color: var(--blue); 
+ 
 }
-
+a{
+    text-decoration: none;
+}
 .navbar{
     background-color: var(--black);
     justify-content:center;       
@@ -47,8 +47,9 @@ html{
     background-color: var(--blue);
     color: var(--red);
 }
+
 .main{
-   
+    
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -59,21 +60,51 @@ html{
     border-bottom: 5px solid var(--black);
     border-radius: 0px 40px 0px 40px; 
     align-items: center;
-    height: auto;
+    align-content: center;
     justify-content: center;
-    min-height: 90vh;
-    text-align: center;
-  
- 
+    justify-items: center;
+    min-height: 85vh;
+    text-align: center; 
+    -webkit-text-stroke-width: 0.5px;
+    
+}
+.bio{
+    color: var(--white);
+    font-family: 'Fira Sans', sans-serif;
+    
+    
 }
 
 
 .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: var(--blue);
+    width:  100vw;
     bottom: 0;
+    
 }
 
-.btn{
+.btn-icon{
+    background-color: var(--black);
+    padding: 5px;
+}
+.btn-icon:hover{
+    background-color: var(--red);
+   
+
+}
+.icon{
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+
+.btn {
     background-color: var(--black);
     color: var(--white);
     padding: 10px;
@@ -85,7 +116,16 @@ html{
     background-color: var(--white) ;
     color: var(--black);
 }
+
+
+
 #resume{
     text-decoration: none;
     color: inherit;
+}
+
+.copyright{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
 }

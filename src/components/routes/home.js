@@ -16,14 +16,7 @@ const Home = () => {
       }}
     >
       <main className="main">
-        <section
-          className="main-text"
-          style={{
-            border: "4px dotted var(--blue)",
-            borderRadius: "8px",
-            maxWidth: "70vw",
-          }}
-        >
+        <section className="main-text">
           <h3>Welcome to my page</h3>
           <h2> Im Alex , a web developer</h2>
           <h5 className="bio">
