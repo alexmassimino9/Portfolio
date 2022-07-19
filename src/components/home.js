@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
-import ResumeModal from "./resumeModal";
+import React from "react";
 
 const Home = () => {
   let navigate = useNavigate();
@@ -9,13 +8,7 @@ const Home = () => {
     let path = "/projects";
     navigate(path);
   };
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleModal = () => {
-    setIsModalOpen((prevState) => {
-      return setIsModalOpen !== isModalOpen;
-    });
-    console.log(isModalOpen);
-  };
+
   return (
     <Box
       sx={{
@@ -45,13 +38,10 @@ const Home = () => {
           <button className="btn" onClick={() => routeChange()}>
             projects
           </button>
-          <button
-            className="btn"
-            onClick={() => {
-              handleModal();
-            }}
-          >
-            resume
+          <button className="btn">
+            <a href="../assets/Resume/ResumeOfficial.pdf" download>
+              resume
+            </a>
           </button>
         </section>
       </main>
