@@ -39,7 +39,7 @@ const Home = () => {
             projects
           </button>
           <button className="btn">
-            <a href="../assets/Resume/ResumeOfficial.pdf" download>
+            <a id="resume" href="../assets/Amassimino.png" download>
               resume
             </a>
           </button>

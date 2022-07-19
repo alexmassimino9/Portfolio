@@ -85,3 +85,7 @@ html{
     background-color: var(--white) ;
     color: var(--black);
 }
+#resume{
+    text-decoration: none;
+    color: inherit;
+}
