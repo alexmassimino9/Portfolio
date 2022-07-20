@@ -1,14 +1,17 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmojiFoodBeverageIcon from "@mui/icons-material/EmojiFoodBeverage";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
     <section className="footer">
       <button className="btn-icon">
-        <a href="https://github.com/alexmassimino9">
+        <a
+          href="https://github.com/alexmassimino9"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitHubIcon
             className="icon"
             sx={{
@@ -18,7 +21,11 @@ const Footer = () => {
         </a>
       </button>
       <button className="btn-icon">
-        <a href="https://github.com/alexmassimino9">
+        <a
+          href="https://github.com/alexmassimino9"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedInIcon
             className="icon"
             sx={{
@@ -28,7 +35,11 @@ const Footer = () => {
         </a>
       </button>
       <button className="btn-icon">
-        <a href="https://github.com/alexmassimino9">
+        <a
+          href="https://www.instagram.com/minocodes/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <InstagramIcon
             className="icon"
             sx={{
