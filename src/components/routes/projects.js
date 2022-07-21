@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <Container>
       {projectData.map((project) => {
-        const { key, name, url, img, code } = project;
+        const { key, name, url, img, code, tech } = project;
         return (
           <Card
             key={key}
@@ -30,14 +30,7 @@ const Projects = () => {
               <Typography gutterBottom variant="h5" component="div">
                 {name}
               </Typography>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                ligula lacus, congue sit amet scelerisque ut, vehicula non nunc.
-                Praesent ac ullamcorper diam, sit amet hendrerit velit. Cras vel
-                commodo quam, at pretium augue. Sed facilisis enim et sapien
-                varius, in sollicitudin velit porttitor. Aliquam neque leo,
-                feugiat a imperdiet.
-              </Typography>
+              <Typography>{project.bio}</Typography>
             </CardContent>
             <CardActions>
               <Button
@@ -57,6 +50,7 @@ const Projects = () => {
               >
                 Code
               </Button>
+              <Typography>Tech used: {tech}</Typography>
             </CardActions>
           </Card>
         );
