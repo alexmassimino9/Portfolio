@@ -48,7 +48,15 @@ const Footer = () => {
           />
         </a>
       </button>
-      <span className="copyright"> Alexander Massimino 2022 ©</span>
+      <span className="copyright"> © Alexander Massimino 2022 </span>
+      <span
+        style={{
+          color: "white",
+          fontSize: "10px",
+        }}
+      >
+        created by Alexander Massimino - all rights reserved
+      </span>
     </section>
   );
 };
