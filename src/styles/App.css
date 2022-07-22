@@ -138,8 +138,9 @@ a{
 }
 
 /* project component */
-.projectImg{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+
+.cardActions{
+ color: var(--blue);
+ display: flex;
+ justify-content: space-evenly;
 }

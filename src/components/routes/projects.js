@@ -27,15 +27,28 @@ const Projects = () => {
           >
             <CardMedia component="img" height="300" image={img} alt={name} />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h3"
+                component="div"
+                fontFamily="'Edu VIC WA NT Beginner', cursive"
+              >
                 {name}
               </Typography>
-              <Typography>{project.bio}</Typography>
+              <Typography
+                variant="h6"
+                component="div"
+                fontFamily="Fira Sans, sans-serif"
+                fontWeight="800"
+              >
+                {project.bio}
+              </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions className="cardActions">
               <Button
                 size="large"
-                variant="outlined"
+                color="error"
+                variant="contained"
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,6 +57,8 @@ const Projects = () => {
               </Button>
               <Button
                 size="large"
+                color="error"
+                variant="contained"
                 href={code}
                 target="_blank"
                 rel="noopener noreferrer"
