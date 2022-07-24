@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import resume from "../../assets/Amassimino.png";
 
 const Home = () => {
   let navigate = useNavigate();
@@ -32,7 +33,7 @@ const Home = () => {
             projects
           </button>
           <button className="btn">
-            <a id="resume" href="../assets/Amassimino.png" download>
+            <a id="resume" href={resume} download>
               resume
             </a>
           </button>
