@@ -16,6 +16,17 @@ const Projects = () => {
 
   return (
     <Container>
+      <Typography
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+        gutterBottom
+        variant="h1"
+        component="div"
+      >
+        Projects
+      </Typography>
       {projectData.map((project) => {
         const { key, name, url, img, code, tech } = project;
         return (
