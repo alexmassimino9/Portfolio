@@ -76,9 +76,7 @@ const Projects = () => {
               >
                 Code
               </Button>
-              <Typography sx={{ border: "1px solid red" }}>
-                Tech used: {tech}
-              </Typography>
+              <Typography>Tech used: {tech}</Typography>
             </CardActions>
           </Card>
         );
