@@ -64,7 +64,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Demo
               </Button>
               <Button
                 size="large"
@@ -76,7 +76,9 @@ const Projects = () => {
               >
                 Code
               </Button>
-              <Typography>Tech used: {tech}</Typography>
+              <Typography sx={{ border: "1px solid red" }}>
+                Tech used: {tech}
+              </Typography>
             </CardActions>
           </Card>
         );
