@@ -14,7 +14,7 @@ const Navbar = () => {
         </Link>
         {pages.map((page) => {
           return (
-            <Link key={page} className="link" to={`/${page}`}>
+            <Link key={page} className="link" to={`/portfolio/${page}`}>
               {page}
             </Link>
           );
