@@ -6,7 +6,7 @@ import resume from "../../assets/Amassimino.png";
 const Home = () => {
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = "/projects";
+    let path = "/portfolio/projects";
     navigate(path);
   };
 
