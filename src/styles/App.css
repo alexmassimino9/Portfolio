@@ -144,3 +144,16 @@ a{
  display: flex;
  justify-content: space-between;
 }
+
+/* contact component */
+.form{
+    background-color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    
+    box-shadow: 1px -1px 28px 6px #000000;
+    padding: 20px;
+}
+
