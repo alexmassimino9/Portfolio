@@ -21,11 +21,7 @@ const Home = () => {
           <h3>Welcome to my page</h3>
           <h2> Im Alex , a web developer</h2>
           <h5 className="bio">
-            My area of focus is primarily on the front-end. I specialize in
-            creating web user interfaces using React and have extensive
-            knowledge with various other technologies. My growth mindset and
-            tenacious work ethics keep me motivated to continue expanding my
-            skill set.
+          A majority of my experience has been developing front end components and user interfaces using React JS , JavaScript, CSS, and HTML. I enjoy the problem solving aspect that developing provides me. Always having something new to learn fuels my passion!
           </h5>
 
           <h4> Get to know know more about me</h4>
