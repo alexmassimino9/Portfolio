@@ -7,6 +7,12 @@
 
 }
 
+@media(max-width: 755px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media(min-width: 500px) {
     .main{
         font-size: xx-large;
@@ -24,7 +30,7 @@
 }
 
 html{
- background-color: var(--white);
+ background-color: var(--black);
  font-family: 'Edu VIC WA NT Beginner', cursive;
  
 }
@@ -35,19 +41,19 @@ a{
     text-decoration: none;
 }
 .navbar{
-    background-color: var(--black);
+    background-color: var(--red);
     justify-content:center;       
 }
 .link{
      text-decoration: none;
-     background-color: var(--red);
+     background-color: var(--black);
      margin: 5px;
      padding: 8px;
      border-radius: 5px;
      color: var(--white);
 }
 .link:hover{
-    background-color: var(--blue);
+    background-color: var(--white);
     color: var(--red);
 }
 
@@ -57,10 +63,8 @@ a{
     display: flex;
     flex-direction: column;
     padding:15px;
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--white);
     border-radius: 4px;
-    border-bottom: 5px solid var(--black);
     border-radius: 0px 40px 0px 40px; 
     align-items: center;
     align-content: center;
@@ -72,10 +76,10 @@ a{
     
 }
 .main-text{
-    color: var(--black);
+    color: var(--blue); 
 }
 .bio{
-    color: var(--white);
+    color: var(--black);
     font-weight: 100;
     font-family: 'Fira Sans', sans-serif;
     line-height: 45px;
@@ -84,12 +88,10 @@ a{
 
 
 .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: var(--blue);
+    background-color: var(--black);
     width:  100vw;
     bottom: 0;
     padding: 10px;
@@ -97,7 +99,7 @@ a{
 }
 
 .btn-icon{
-    background-color: var(--black);
+    background-color: var(--blue);
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
@@ -123,7 +125,7 @@ a{
 
 }
 .btn:hover{
-    background-color: var(--white) ;
+    background-color: var(--red) ;
     color: var(--black);
 }
 
@@ -150,13 +152,9 @@ a{
 
 /* contact component */
 .form{
-    background-color: var(--white);
+    margin-top: 25vh;
     border-radius: 8px;
     display: flex;
     flex-direction:column;
-    justify-content: center;
-    
-    box-shadow: 1px -1px 28px 6px #000000;
-    padding: 20px;
 }
 
