@@ -28,6 +28,9 @@ html{
  font-family: 'Edu VIC WA NT Beginner', cursive;
  
 }
+*{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
