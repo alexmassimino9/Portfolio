@@ -22,7 +22,7 @@ const Projects = () => {
           justifyContent: "center",
         }}
         gutterBottom
-        variant="h1"
+        variant="h2"
         component="div"
       >
         Projects
@@ -33,7 +33,7 @@ const Projects = () => {
           <Card
             key={key}
             sx={{
-              margin: "20px",
+              marginTop: "25px",
             }}
           >
             <CardMedia component="img" height="300" image={img} alt={name} />

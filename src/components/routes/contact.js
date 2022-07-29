@@ -31,14 +31,11 @@ const Contact = () => {
   return (
     <Container
       sx={{
-        border: "1px solid red",
-        padding: "100px",
         height: "100vh",
       }}
     >
       <Typography
-        variant="h3"
-        component="div"
+        variant="h4"
         mb={10}
         fontFamily="'Edu VIC WA NT Beginner', cursive"
       >
