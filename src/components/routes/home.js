@@ -22,7 +22,7 @@ const Home = () => {
           <h2> Im Alex , a web developer</h2>
           <h5 className="bio">
             A majority of my experience has been developing front end components
-            and user interfaces using React JS , JavaScript, CSS, and HTML to
+            and user interfaces using React JS , JavaScript, CSS, and HTML, to
             name a few. I enjoy the problem solving aspect that developing
             provides me. Always having something new to learn fuels my passion!
           </h5>
