@@ -32,6 +32,7 @@ const Contact = () => {
     <Container
       sx={{
         height: "100vh",
+        bgcolor: "var(--white)",
       }}
     >
       <Typography

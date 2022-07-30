@@ -20,6 +20,7 @@ const Projects = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
+          color: "var(--white)",
         }}
         gutterBottom
         variant="h2"
