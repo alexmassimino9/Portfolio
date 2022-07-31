@@ -28,14 +28,17 @@
     }
     
 }
-
+*{
+    overflow-x: hidden;
+    
+}
 html{
  background-color: var(--black);
  font-family: 'Edu VIC WA NT Beginner', cursive;
  
 }
-*{
-    overflow-x: hidden;
+body{
+    margin-top: 10vh;
 }
 a{
     text-decoration: none;
