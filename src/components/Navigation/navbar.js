@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 
 import { Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Container } from "@mui/system";
 
 const Navbar = () => {
   const pages = ["Projects", "Contact"];
