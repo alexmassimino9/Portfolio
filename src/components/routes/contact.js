@@ -35,7 +35,8 @@ const Contact = () => {
           height: "100vh",
           bgcolor: "var(--white)",
           borderRadius: "8px",
-          margin: "10px",
+          marginTop: "10px",
+          marginBottom: "30px",
         }}
       >
         <Typography
