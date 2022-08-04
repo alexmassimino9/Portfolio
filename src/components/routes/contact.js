@@ -29,56 +29,60 @@ const Contact = () => {
   };
 
   return (
-    <Container
-      sx={{
-        height: "100vh",
-        bgcolor: "var(--white)",
-      }}
-    >
-      <Typography
-        variant="h4"
-        mb={10}
-        fontFamily="'Edu VIC WA NT Beginner', cursive"
+    <main style={{ backgroundColor: "var(--blue)" }}>
+      <Container
+        sx={{
+          height: "100vh",
+          bgcolor: "var(--white)",
+          borderRadius: "8px",
+          margin: "10px",
+        }}
       >
-        Send me a message:
-      </Typography>
-      <form ref={form} onSubmit={sendEmail} className="form">
-        <TextField
-          margin="dense"
-          required
-          label="Name: "
-          type="text"
-          name="user_name"
-          className="form-control"
-        />
-        <TextField
-          margin="dense"
-          required
-          label="Email: "
-          type="email"
-          name="user_email"
-          className="form-control"
-        />
-        <TextField
-          margin="dense"
-          required
-          label="Message: "
-          type="text"
-          multiline
-          rows={4}
-          name="message"
-          className="form-control"
-        />
-        <Button
-          type="submit"
-          value="Send"
-          variant="contained"
-          className="form-control"
+        <Typography
+          variant="h4"
+          mb={10}
+          fontFamily="'Edu VIC WA NT Beginner', cursive"
         >
-          Submit
-        </Button>
-      </form>
-    </Container>
+          Send me a message:
+        </Typography>
+        <form ref={form} onSubmit={sendEmail} className="form">
+          <TextField
+            margin="dense"
+            required
+            label="Name: "
+            type="text"
+            name="user_name"
+            className="form-control"
+          />
+          <TextField
+            margin="dense"
+            required
+            label="Email: "
+            type="email"
+            name="user_email"
+            className="form-control"
+          />
+          <TextField
+            margin="dense"
+            required
+            label="Message: "
+            type="text"
+            multiline
+            rows={4}
+            name="message"
+            className="form-control"
+          />
+          <Button
+            type="submit"
+            value="Send"
+            variant="contained"
+            className="form-control"
+          >
+            Submit
+          </Button>
+        </form>
+      </Container>
+    </main>
   );
 };
 

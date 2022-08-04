@@ -7,6 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Box } from "@mui/system";
 
 const Projects = () => {
   //render route to top of the component  !!TODO: make custom hook to make reusable for all routes on click
@@ -15,74 +16,76 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container>
-      <Typography
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          color: "var(--white)",
-        }}
-        gutterBottom
-        variant="h2"
-        component="div"
-      >
-        Projects
-      </Typography>
-      {projectData.map((project) => {
-        const { key, name, url, img, code, tech } = project;
-        return (
-          <Card
-            key={key}
-            sx={{
-              marginTop: "25px",
-            }}
-          >
-            <CardMedia component="img" height="300" image={img} alt={name} />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h3"
-                component="div"
-                fontFamily="'Edu VIC WA NT Beginner', cursive"
-              >
-                {name}
-              </Typography>
-              <Typography
-                variant="h6"
-                component="div"
-                fontFamily="Fira Sans, sans-serif"
-                fontWeight="800"
-              >
-                {project.bio}
-              </Typography>
-            </CardContent>
-            <CardActions className="cardActions">
-              <Button
-                size="large"
-                color="error"
-                variant="contained"
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </Button>
-              <Button
-                size="large"
-                color="error"
-                variant="contained"
-                href={code}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </Button>
-              <Typography>Tech used: {tech}</Typography>
-            </CardActions>
-          </Card>
-        );
-      })}
-    </Container>
+    <main style={{ backgroundColor: "var(--blue)" }}>
+      <Container>
+        <Typography
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            color: "var(--white)",
+          }}
+          gutterBottom
+          variant="h2"
+          component="div"
+        >
+          Projects
+        </Typography>
+        {projectData.map((project) => {
+          const { key, name, url, img, code, tech } = project;
+          return (
+            <Card
+              key={key}
+              sx={{
+                marginTop: "25px",
+              }}
+            >
+              <CardMedia component="img" height="300" image={img} alt={name} />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h3"
+                  component="div"
+                  fontFamily="'Edu VIC WA NT Beginner', cursive"
+                >
+                  {name}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  fontFamily="Fira Sans, sans-serif"
+                  fontWeight="800"
+                >
+                  {project.bio}
+                </Typography>
+              </CardContent>
+              <CardActions className="cardActions">
+                <Button
+                  size="large"
+                  color="error"
+                  variant="contained"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </Button>
+                <Button
+                  size="large"
+                  color="error"
+                  variant="contained"
+                  href={code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </Button>
+                <Typography>Tech used: {tech}</Typography>
+              </CardActions>
+            </Card>
+          );
+        })}
+      </Container>
+    </main>
   );
 };
 
