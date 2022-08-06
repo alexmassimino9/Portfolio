@@ -18,9 +18,9 @@ const Home = () => {
       }}
     >
       <main className="main">
-        <section className="main-text">
+        <section>
           <h3>Welcome to my page</h3>
-          <h2> Im Alex , a web developer</h2>
+          <h1> Im Alex , a web developer</h1>
           <h5 className="bio">
             A majority of my experience has been developing front end components
             and user interfaces using React JS , JavaScript, CSS, and HTML, to

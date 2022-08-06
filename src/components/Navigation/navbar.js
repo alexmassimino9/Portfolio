@@ -1,25 +1,22 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-
-import { Toolbar } from "@mui/material";
-import { Link } from "react-router-dom";
+import NavButton from "./navButton";
+import NavToolbar from "./navToolbar";
 
 const Navbar = () => {
   const pages = ["Projects", "Contact"];
   return (
     <AppBar>
-      <Toolbar className="navbar">
-        <Link to="/portfolio/" className="link">
-          Home
-        </Link>
+      <NavToolbar>
+        <NavButton to="/portfolio/">Home</NavButton>
         {pages.map((page) => {
           return (
-            <Link key={page} className="link" to={`/portfolio/${page}`}>
+            <NavButton key={page} to={`/portfolio/${page}`}>
               {page}
-            </Link>
+            </NavButton>
           );
         })}
-      </Toolbar>
+      </NavToolbar>
     </AppBar>
   );
 };

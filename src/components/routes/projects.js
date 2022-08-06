@@ -16,17 +16,17 @@ const Projects = () => {
   }, []);
 
   return (
-    <main style={{ backgroundColor: "var(--blue)" }}>
+    <main>
       <Container>
         <Typography
           sx={{
             display: "flex",
             justifyContent: "center",
-            color: "var(--white)",
+            fontFamily: "apple-system",
           }}
           gutterBottom
           variant="h2"
-          component="div"
+          component="title"
         >
           Projects
         </Typography>
@@ -58,7 +58,7 @@ const Projects = () => {
                   {project.bio}
                 </Typography>
               </CardContent>
-              <CardActions className="cardActions">
+              <CardActions>
                 <Button
                   size="large"
                   color="error"

@@ -1,10 +1,17 @@
 
+.test{
+    outline: 1px solid red;
+}
 :root{
---white: #F5F5F5;
---red: #F05454;
---blue: #30475E;
---black: #121212;
-
+/* new theme */
+--main: #512da8;
+--mainLight: #8559da;
+--mainDark: #140078;
+--secondary: #2e7d32;
+--secondaryLight: #60ad5e;
+--secondaryDark:#005005 ;
+--extraLightMain: #ede7f6;
+--extraLightSecondary: #e8f5e9;
 }
 
 @media(max-width: 755px){
@@ -12,6 +19,7 @@
         display: flex;
         flex-direction: column;
     }
+    
 }
 @media(min-width: 500px) {
     .main{
@@ -26,121 +34,94 @@
         font-size: xx-large;
         padding: 30px;
     }
-    
-}
-*{
-    overflow-x: hidden;
-    
-}
-html{
- background-color: var(--black);
- font-family: 'Edu VIC WA NT Beginner', cursive;
- 
-}
-body{
-    margin-top: 10vh;
-}
-a{
-    text-decoration: none;
-}
-.navbar{
-    background-color: var(--red);
-    justify-content:center;       
-}
-.link{
-     text-decoration: none;
-     background-color: var(--black);
-     margin: 5px;
-     padding: 8px;
-     border-radius: 5px;
-     color: var(--white);
-}
-.link:hover{
-    background-color: var(--white);
-    color: var(--red);
 }
 
+
+*{
+    overflow-x: hidden;
+    color: #e8f5e9;
+    margin: 0;
+}
+html{
+    background-color: var(--mainLight);
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+body{
+    background-color: var(--mainLight);
+    margin-top: 10vh;
+}
+
+/* ==========
+nav
+========== */
+
+/* ==========
+home
+========== */
 .main{
-    
-    margin: 5px;
     display: flex;
     flex-direction: column;
-    padding:15px;
-    background-color: var(--white);
-    border-radius: 4px;
-    border-radius: 0px 40px 0px 40px; 
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
     min-height: 85vh;
     text-align: center; 
-    -webkit-text-stroke-width: 0.5px;
-    
 }
-.main-text{
-    color: var(--blue); 
+.main h3{
+    padding: 10px
 }
 .bio{
-    color: var(--black);
-    font-weight: 100;
+    font-weight: 900;
     font-family: 'Fira Sans', sans-serif;
     line-height: 45px;
-    font-size: 25px; 
+ 
 }
 
-
+/* ==========
+    projects
+   ========== */
 .footer{
     display: flex;justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--main);
     width:  100vw;
     bottom: 0;
     padding: 10px;
-    
 }
 
 .btn-icon{
-    background-color: var(--blue);
+    background-color: var(--secondaryLight);
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
 }
 .btn-icon:hover{
-    background-color: var(--red);
-   
-
+    background-color: var(--secondaryDark);
 }
 .icon{
-    color: var(--white);
     padding: 0;
     margin: 0;
 }
 
-
 .btn {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--secondaryLight);
+    color: var(--mainDark);
     padding: 10px;
     border-radius: 8px;
     margin: 8px;
-
 }
 .btn:hover{
-    background-color: var(--red) ;
-    color: var(--black);
+    background-color: var(--secondaryDark) ;
+    color: var(--extraLightMain);
 }
-
-
 
 #resume{
     text-decoration: none;
-    color: inherit;
 }
 
 .copyright{
-    color: var(--white);
     font-size: 20px;
     font-weight: 700;
 }
@@ -148,7 +129,6 @@ a{
 /* project component */
 
 .cardActions{
- color: var(--blue);
  display: flex;
  justify-content: space-between;
 }
@@ -160,4 +140,3 @@ a{
     display: flex;
     flex-direction:column;
 }
-
