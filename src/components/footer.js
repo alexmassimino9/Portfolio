@@ -10,7 +10,7 @@ const Footer = () => {
         <a
           href="https://github.com/alexmassimino9"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           <GitHubIcon
             className="icon"
@@ -24,7 +24,7 @@ const Footer = () => {
         <a
           href="https://github.com/alexmassimino9"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           <LinkedInIcon
             className="icon"
@@ -38,7 +38,7 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/minocodes/"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           <InstagramIcon
             className="icon"
