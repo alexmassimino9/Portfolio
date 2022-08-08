@@ -29,17 +29,18 @@ const Contact = () => {
   };
 
   return (
-    <main style={{ backgroundColor: "var(--blue)" }}>
+    <main>
       <Container
         sx={{
           height: "100vh",
-          bgcolor: "var(--white)",
+          bgcolor: "var(--extraLightSecondary)",
           borderRadius: "8px",
           marginTop: "10px",
           marginBottom: "30px",
         }}
       >
         <Typography
+          color="black"
           variant="h4"
           mb={10}
           fontFamily="'Edu VIC WA NT Beginner', cursive"
@@ -78,6 +79,7 @@ const Contact = () => {
             value="Send"
             variant="contained"
             className="form-control"
+            color="secondary"
           >
             Submit
           </Button>

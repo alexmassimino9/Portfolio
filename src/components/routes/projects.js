@@ -7,7 +7,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import NavButton from "../Navigation/navButton";
 
 const Projects = () => {
   //render route to top of the component  !!TODO: make custom hook to make reusable for all routes on click
@@ -17,11 +16,7 @@ const Projects = () => {
 
   return (
     <main>
-      <Container
-        sx={{
-          outline: "2px solid yellow",
-        }}
-      >
+      <Container>
         <Typography
           sx={{
             display: "flex",
