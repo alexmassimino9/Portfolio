@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/system";
+import NavButton from "../Navigation/navButton";
 
 const Projects = () => {
   //render route to top of the component  !!TODO: make custom hook to make reusable for all routes on click
@@ -17,7 +17,11 @@ const Projects = () => {
 
   return (
     <main>
-      <Container>
+      <Container
+        sx={{
+          outline: "2px solid yellow",
+        }}
+      >
         <Typography
           sx={{
             display: "flex",
@@ -31,7 +35,7 @@ const Projects = () => {
           Projects
         </Typography>
         {projectData.map((project) => {
-          const { key, name, url, img, code, tech } = project;
+          const { key, name, url, img, code, tech, bio } = project;
           return (
             <Card
               key={key}
@@ -46,6 +50,7 @@ const Projects = () => {
                   variant="h3"
                   component="div"
                   fontFamily="'Edu VIC WA NT Beginner', cursive"
+                  color="black"
                 >
                   {name}
                 </Typography>
@@ -53,15 +58,15 @@ const Projects = () => {
                   variant="h6"
                   component="div"
                   fontFamily="Fira Sans, sans-serif"
-                  fontWeight="800"
+                  color="black"
                 >
-                  {project.bio}
+                  {bio}
                 </Typography>
               </CardContent>
               <CardActions>
                 <Button
+                  color="secondary"
                   size="large"
-                  color="error"
                   variant="contained"
                   href={url}
                   target="_blank"
@@ -70,8 +75,8 @@ const Projects = () => {
                   Demo
                 </Button>
                 <Button
+                  color="secondary"
                   size="large"
-                  color="error"
                   variant="contained"
                   href={code}
                   target="_blank"
@@ -79,7 +84,13 @@ const Projects = () => {
                 >
                   Code
                 </Button>
-                <Typography>Tech used: {tech}</Typography>
+                <Typography
+                  sx={{
+                    color: "black",
+                  }}
+                >
+                  Tech used: {tech}
+                </Typography>
               </CardActions>
             </Card>
           );
