@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b5141f1de8069a015164",
-    "url": "/portfolio/static/css/main.98fd6ab2.chunk.css"
+    "revision": "6072552f34dca011b85f",
+    "url": "/portfolio/static/css/main.e3c64680.chunk.css"
   },
   {
-    "revision": "b5141f1de8069a015164",
-    "url": "/portfolio/static/js/main.b5141f1d.chunk.js"
+    "revision": "6072552f34dca011b85f",
+    "url": "/portfolio/static/js/main.6072552f.chunk.js"
   },
   {
-    "revision": "2e081abecca541cd8074",
-    "url": "/portfolio/static/js/1.2e081abe.chunk.js"
+    "revision": "2106efb60669e10c2347",
+    "url": "/portfolio/static/js/1.2106efb6.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
@@ -28,7 +28,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Portfolio.bb8aa2bf.png"
   },
   {
-    "revision": "efd560a87ec92da68d0b4ca3627c2fe8",
+    "revision": "8cac3c1e0fd902273aa2f9d2dceb9d9b",
+    "url": "/portfolio/static/media/Taskify.8cac3c1e.png"
+  },
+  {
+    "revision": "2107fd44b98b342a6a004b33b1fb9a5b",
     "url": "/portfolio/index.html"
   }
 ];
