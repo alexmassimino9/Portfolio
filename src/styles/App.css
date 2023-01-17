@@ -12,6 +12,10 @@
 --secondaryDark:#005005 ;
 --extraLightMain: #ede7f6;
 --extraLightSecondary: #e8f5e9;
+--WHITE: '#EEEEEE', 
+--MINT_GREEN: '#4ECCA3', 
+--DARK_GREY: '#393E46', 
+--BLACK_VARIANT: '#232931'
 }
 
 @media(max-width: 755px){
