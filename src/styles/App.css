@@ -4,14 +4,12 @@
 }
 :root{
 /* new theme */
---main: #512da8;
---mainLight: #8559da;
---mainDark: #140078;
---secondary: #2e7d32;
---secondaryLight: #60ad5e;
---secondaryDark:#005005 ;
---extraLightMain: #ede7f6;
---extraLightSecondary: #e8f5e9;
+--purple: #674188
+--lightPurple: #C3ACD0
+--light: #F7EFE5
+--extraLight: #FFFBF5;
+
+
 }
 
 @media(max-width: 755px){
