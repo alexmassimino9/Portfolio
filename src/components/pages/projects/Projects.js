@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container } from "@mui/system";
-import projectData from "../data/projectData";
+import projectData from "../../data/projectData";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";

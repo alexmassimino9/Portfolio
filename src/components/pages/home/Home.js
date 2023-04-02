@@ -1,22 +1,19 @@
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import resume from "../../assets/Amassimino.png";
+import resume from "../../../assets/Amassimino.png";
+import { Section1 } from "./";
 //  todo : add more projects, and update styling
 
 const Home = () => {
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = "/portfolio/projects";
+    let path = "/projects";
     navigate(path);
   };
 
   return (
-    <Box
-      sx={{
-        fontFamily: "Edu VIC WA NT Beginner, cursive",
-      }}
-    >
+    <Box sx={{}}>
       <main className="main">
         <section>
           <h3>Welcome to my page</h3>

@@ -1,7 +1,9 @@
 import React from "react";
 import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home, Contact, Projects } from "./components/routes";
+import { Home } from "./components/pages/home/";
+import { Contact } from "./components/pages/contact/";
+import { Projects } from "./components/pages/projects/";
 import Footer from "./components/Footer.js";
 import { Navbar } from "./components/navigation";
 
