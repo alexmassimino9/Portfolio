@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/pages/home/";
 import { Contact } from "./components/pages/contact/";
 import { Projects } from "./components/pages/projects/";
-import Navbar from "./components/navigation/Navbar";
+import { Navbar } from "./components/navigation/";
 import { Footer } from "./components/";
 const App = () => {
   return (
