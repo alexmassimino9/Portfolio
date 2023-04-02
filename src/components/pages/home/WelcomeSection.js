@@ -16,6 +16,9 @@ function WelcomeSection() {
         boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.1)",
         borderRadius: "8px",
         backgroundColor: "#fff",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Typography variant="h3" sx={{ marginBottom: "1.5rem", fontWeight: 700 }}>
@@ -34,6 +37,7 @@ function WelcomeSection() {
           fontWeight: 300,
           lineHeight: "1.8",
           color: "#666666",
+          maxWidth: "600px",
         }}
       >
         I specialize in creating modern web applications using React,
