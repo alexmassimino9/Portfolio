@@ -37,7 +37,14 @@ const Project = ({ project }) => {
           alt={name}
           sx={{ objectFit: "cover" }}
         />
-        <CardContent sx={{ flexGrow: 1, padding: "1.5rem" }}>
+        <CardContent
+          sx={{
+            flexGrow: 1,
+            padding: "1.5rem",
+            height: "180px",
+            overflow: "auto",
+          }}
+        >
           <Typography
             variant="h5"
             component="h2"
@@ -51,15 +58,26 @@ const Project = ({ project }) => {
           >
             {bio}
           </Typography>
-          <Stack direction="row" spacing={1} sx={{ mt: "1.5rem" }}>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{ mt: "1.5rem", flexWrap: "wrap" }}
+          >
             {tech.split(",").map((t, index) => (
               <Typography
                 key={index}
                 variant="body2"
                 color="secondary"
-                sx={{ fontFamily: "Roboto", fontWeight: 400 }}
+                sx={{
+                  fontFamily: "Roboto",
+                  fontWeight: 400,
+                  whiteSpace: "nowrap",
+                  textOverflow: "ellipsis",
+                  overflow: "hidden",
+                  maxWidth: "100%",
+                }}
               >
-                {t}
+                {t.trim()}
               </Typography>
             ))}
           </Stack>

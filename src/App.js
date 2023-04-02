@@ -5,7 +5,7 @@ import { Home } from "./components/pages/home/";
 import { Contact } from "./components/pages/contact/";
 import { Projects } from "./components/pages/projects/";
 import Footer from "./components/Footer.js";
-import { Navbar } from "./components/navigation/";
+import Navbar from "./components/navigation/Navbar";
 
 const App = () => {
   return (

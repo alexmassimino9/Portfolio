@@ -2,6 +2,7 @@
 import img from "../../assets/projects/default-image.png";
 import portfolioImg from "../../assets/projects/Portfolio.png";
 import taskifyimg from "../../assets/projects/Taskify.png";
+import coachesCodeImg from "../../assets/projects/CoachesCode.png";
 
 const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
 ligula lacus, congue sit amet scelerisque ut, vehicula non nunc.
@@ -17,10 +18,8 @@ const projectData = [
     url: "https://alexmassimino9.github.io/portfolio/",
     img: portfolioImg,
     code: "https://github.com/alexmassimino9/portfolio",
-    bio:
-      "This is a portfolio hostng some of my most recent projects and endeavors. My portfolio is meant to be built with a minimal desgin style and emphasize my recent work and projects.",
-    tech:
-      "HTML, CSS, JavaScript, ReactJS, React Router, Material UI, Github, Git Pages",
+    bio: "Welcome to my portfolio, where I showcase some of my latest projects and endeavors. My portfolio embodies a sleek and minimal design, deliberately highlighting my most recent and noteworthy work.",
+    tech: "JavaScript, React, React Router, MUI",
   },
   {
     key: 1,
@@ -28,18 +27,17 @@ const projectData = [
     url: "https://github.com/alexmassimino9/react-typescript-task-app",
     img: taskifyimg,
     code: "https://github.com/alexmassimino9/react-typescript-task-app",
-    bio:
-      "This is the sterotypical todo app, but the twist to this is that it was built with typeScript. This todo app has the basic CRUD functionalities. This is the first project that I encorporated TypeScript.",
-    tech: "HTML, CSS, JavaScript, ReactJS, TypeScript",
+    bio: "While this project is a conventional todo app, it stands out due to its implementation in TypeScript. The app offers fundamental CRUD operations and serves as a significant milestone for me as my initial project in TypeScript integration.",
+    tech: "TypeScript,JavaScript, React, ",
   },
   {
     key: 2,
-    name: "project 2",
-    url: "https://github.com/alexmassimino9",
-    img: img,
-    code: "https://github.com/alexmassimino9",
-    bio: lorem,
-    tech: "....",
+    name: "Coaches Code",
+    url: "https://main.d20njt9dmt5i9j.amplifyapp.com/",
+    img: coachesCodeImg,
+    code: "https://github.com/alexmassimino9/CoachesCode",
+    bio: "Coach's Code employs a user-friendly chat interface to enhance the user experience for coaches, allowing them to communicate, access resources, and receive support. The platform's intuitive design is accessible for coaches of all levels, empowering them to improve their coaching skills and relationships with their athletes.",
+    tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL",
   },
 ];
 
