@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { WelcomeSection } from "./";
+import { WelcomeSection, SkillsSection } from "./";
 
 //  todo : add more projects, and update styling
 
@@ -14,6 +14,7 @@ const Home = () => {
     >
       <main className="main">
         <WelcomeSection />
+        <SkillsSection />
       </main>
     </Box>
   );
