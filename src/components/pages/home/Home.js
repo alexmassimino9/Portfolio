@@ -1,40 +1,19 @@
 import { Box } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import React from "react";
-import resume from "../../../assets/Amassimino.png";
-import { Section1 } from "./";
+import { WelcomeSection } from "./";
+
 //  todo : add more projects, and update styling
 
 const Home = () => {
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = "/projects";
-    navigate(path);
-  };
-
   return (
-    <Box sx={{}}>
+    <Box
+      sx={{
+        marginTop: "11vh",
+        border: "5px solid blue",
+      }}
+    >
       <main className="main">
-        <section>
-          <h3>Welcome to my page</h3>
-          <h1> Im Alex , a web developer</h1>
-          <h5 className="bio">
-            A majority of my experience has been developing front end components
-            and user interfaces using React JS , JavaScript, CSS, and HTML, to
-            name a few. I enjoy the problem solving aspect that developing
-            provides me. Always having something new to learn fuels my passion!
-          </h5>
-
-          <h4> Get to know know more about me</h4>
-          <button className="btn" onClick={() => routeChange()}>
-            projects
-          </button>
-          <button className="btn">
-            <a id="resume" href={resume} download>
-              resume
-            </a>
-          </button>
-        </section>
+        <WelcomeSection />
       </main>
     </Box>
   );

@@ -1,4 +1,5 @@
 import Home from "./Home";
-import Section1 from "./Section1";
+import WelcomeSection from "./WelcomeSection";
+import Section2 from "./Section2";
 
-export { Home, Section1 };
+export { Home, WelcomeSection, Section2 };
