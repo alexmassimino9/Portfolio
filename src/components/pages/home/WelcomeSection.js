@@ -15,7 +15,7 @@ function WelcomeSection() {
         variant="h2"
         sx={{ marginBottom: "1rem", fontWeight: 500, color: "#1A1A1A" }}
       >
-        I'm a Frontend Developer.
+        Frontend Developer.
       </Typography>
       <Typography
         variant="h5"
@@ -26,14 +26,13 @@ function WelcomeSection() {
           color: "#666666",
         }}
       >
-        I specialize in creating high-quality, modern web applications using
-        cutting-edge technologies such as React, TypeScript, JavaScript, and AWS
-        services including Amplify, EC2, and DynamoDB. I have extensive
-        experience building both RESTful APIs and GraphQL APIs and I leverage
-        frameworks like MUI to ensure a polished and user-friendly experience.
-        My passion for technology motivates me to constantly learn and stay
-        up-to-date with the latest advancements in the industry. This helps me
-        provide the most innovative and effective solutions for my clients.
+        I specialize in creating modern web applications using React,
+        TypeScript, and AWS services like Amplify, EC2, and DynamoDB. With
+        extensive experience building both RESTful APIs and GraphQL APIs, I
+        leverage frameworks like MUI to ensure a polished and user-friendly
+        experience. My passion for technology motivates me to constantly learn
+        and stay up-to-date with the latest advancements in the industry,
+        providing innovative and effective solutions for my clients.
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         <Grid item>

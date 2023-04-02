@@ -1,3 +1,4 @@
+import React from "react";
 import { Grid, Box, Typography } from "@mui/material";
 import skillsData from "../../data/skillsData";
 
@@ -16,11 +17,7 @@ const SkillCard = ({ title, skills }) => {
         },
       }}
     >
-      Copy code
       <Typography
-        javascript
-        Copy
-        code
         variant="h5"
         sx={{
           fontWeight: 700,
@@ -40,7 +37,7 @@ const SkillCard = ({ title, skills }) => {
                 alignItems: "center",
               }}
             >
-              {skill.icon && <skill.icon size={48} />}
+              {skill.icon && React.createElement(skill.icon, { size: 48 })}
               <Typography
                 variant="subtitle1"
                 sx={{ fontWeight: 500, marginTop: "0.5rem" }}
@@ -57,13 +54,21 @@ const SkillCard = ({ title, skills }) => {
 
 const SkillsSection = () => {
   return (
-    <Grid container spacing={4} sx={{ marginTop: "2rem" }}>
-      {skillsData.map((skill) => (
-        <Grid item xs={12} md={6} lg={4} key={skill.title}>
-          <SkillCard title={skill.title} skills={skill.skills} />
-        </Grid>
-      ))}
-    </Grid>
+    <Box sx={{ backgroundColor: "#F4F4F4", padding: "2rem" }}>
+      <Typography
+        variant="h4"
+        sx={{ fontWeight: 700, marginBottom: "2rem", textAlign: "center" }}
+      >
+        Skills
+      </Typography>
+      <Grid container spacing={4} sx={{ marginTop: "2rem" }}>
+        {skillsData.map((skill) => (
+          <Grid item xs={12} md={6} lg={4} key={skill.title}>
+            <SkillCard title={skill.title} skills={skill.skills} />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 };
 
