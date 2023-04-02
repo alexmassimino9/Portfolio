@@ -4,14 +4,13 @@ import projectData from "../../data/projectData";
 import Project from "./Project";
 
 const Projects = () => {
-  //render route to top of the component  !!TODO: make custom hook to make reusable for all routes on click
   useEffect(() => {
     return window.scrollTo(0, 0);
   }, []);
 
   return (
     <main>
-      <Container maxWidth="lg" sx={{ py: 6 }}>
+      <Container maxWidth="lg" sx={{ py: 6, marginTop: "11vh" }}>
         <Typography
           variant="h3"
           component="h1"
@@ -19,6 +18,8 @@ const Projects = () => {
             fontWeight: 700,
             textAlign: "center",
             mb: 4,
+            letterSpacing: "0.05em",
+            color: "#1C1C1C",
           }}
         >
           Projects

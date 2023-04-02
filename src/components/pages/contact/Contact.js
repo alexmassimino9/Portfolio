@@ -1,91 +1,115 @@
-import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
-import { Container } from "@mui/system";
-import { Button, TextField, Typography } from "@mui/material";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+import {
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Box,
+  Grid,
+} from "@mui/material";
 
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_s6q61tt",
-        "contact_form",
+    try {
+      const result = await emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
         form.current,
-        "v5s6sK-NINaZ_1wli"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          alert("Email Sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
+        "YOUR_USER_ID"
       );
+      console.log(result.text);
+      e.target.reset();
+      alert("Email Sent");
+    } catch (error) {
+      console.log(error.text);
+    }
   };
 
   return (
-    <main>
-      <Container
-        sx={{
-          height: "100vh",
-          bgcolor: "var(--extraLightSecondary)",
-          borderRadius: "8px",
-          marginTop: "10px",
-          marginBottom: "30px",
-        }}
-      >
-        <Typography
-          color="black"
-          variant="h4"
-          mb={10}
-          fontFamily="'Edu VIC WA NT Beginner', cursive"
+    <Box sx={{ bgcolor: "#F6F6F6", pt: "11vh", pb: "11vh" }}>
+      <Container maxWidth="md">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            bgcolor: "common.white",
+            borderRadius: "8px",
+            p: 4,
+            boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.1)",
+          }}
         >
-          Send me a message:
-        </Typography>
-        <form ref={form} onSubmit={sendEmail} className="form">
-          <TextField
-            margin="dense"
-            required
-            label="Name: "
-            type="text"
-            name="user_name"
-            className="form-control"
-          />
-          <TextField
-            margin="dense"
-            required
-            label="Email: "
-            type="email"
-            name="user_email"
-            className="form-control"
-          />
-          <TextField
-            margin="dense"
-            required
-            label="Message: "
-            type="text"
-            multiline
-            rows={4}
-            name="message"
-            className="form-control"
-          />
-          <Button
-            type="submit"
-            value="Send"
-            variant="contained"
-            className="form-control"
-            color="secondary"
+          <Typography variant="h4" fontFamily="Edu VIC WA NT Beginner, cursive">
+            Contact Me
+          </Typography>
+          <Box
+            component="form"
+            onSubmit={sendEmail}
+            sx={{ mt: 2, width: "100%" }}
           >
-            Submit
-          </Button>
-        </form>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  margin="dense"
+                  required
+                  label="Name"
+                  type="text"
+                  name="user_name"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  margin="dense"
+                  required
+                  label="Email"
+                  type="email"
+                  name="user_email"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  margin="dense"
+                  required
+                  label="Message"
+                  type="text"
+                  multiline
+                  rows={4}
+                  name="message"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  sx={{
+                    bgcolor: "#2ECC71",
+                    color: "#FFF",
+                    "&:hover": {
+                      bgcolor: "#27AE60",
+                    },
+                  }}
+                  fullWidth
+                >
+                  Send Message
+                </Button>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
       </Container>
-    </main>
+    </Box>
   );
 };
 

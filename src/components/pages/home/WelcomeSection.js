@@ -7,7 +7,17 @@ function WelcomeSection() {
   };
 
   return (
-    <Box sx={{ textAlign: "center", margin: "2rem auto", maxWidth: "800px" }}>
+    <Box
+      sx={{
+        textAlign: "center",
+        margin: "2rem auto",
+        maxWidth: "800px",
+        padding: "1rem",
+        boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.1)",
+        borderRadius: "8px",
+        backgroundColor: "#fff",
+      }}
+    >
       <Typography variant="h3" sx={{ marginBottom: "1.5rem", fontWeight: 700 }}>
         Hello, I'm Alex.
       </Typography>
