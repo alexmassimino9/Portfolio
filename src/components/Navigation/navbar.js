@@ -6,9 +6,10 @@ const NavButton = ({ to, children }) => {
   return (
     <Button
       sx={{
-        bgcolor: "blue",
+        bgcolor: "#2ECC71",
+        color: "#FFF",
         "&:hover": {
-          bgcolor: "red",
+          bgcolor: "#27AE60",
         },
         margin: "5px",
       }}
@@ -25,10 +26,9 @@ const NavButton = ({ to, children }) => {
 const Navbar = () => {
   const pages = ["projects", "contact"];
   return (
-    <AppBar sx={{ border: "5px solid red" }}>
+    <AppBar sx={{ bgcolor: "#F4F4F4", color: "#1A1A1A" }}>
       <Toolbar
         sx={{
-          bgcolor: "lightblue",
           height: "10vh",
           justifyContent: "center",
         }}
