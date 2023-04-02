@@ -1,7 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import NavButton from "./navButton";
-import NavToolbar from "./navToolbar";
+import NavButton from "./NavButton";
+import NavToolbar from "./NavToolbar";
 
 const Navbar = () => {
   const pages = ["projects", "contact"];

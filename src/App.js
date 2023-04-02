@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "./components/Navigation/navbar";
 import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/routes/home";
-import Projects from "./components/routes/projects";
-import Contact from "./components/routes/contact";
-import Footer from "./components/footer";
+import { Home, Contact, Projects } from "./components/routes";
+import Footer from "./components/Footer.js";
+import { Navbar } from "./components/navigation";
 
 const App = () => {
   return (
