@@ -4,14 +4,14 @@ import NavButton from "./navButton";
 import NavToolbar from "./navToolbar";
 
 const Navbar = () => {
-  const pages = ["Projects", "Contact"];
+  const pages = ["projects", "contact"];
   return (
     <AppBar>
       <NavToolbar>
-        <NavButton to="/portfolio/">Home</NavButton>
+        <NavButton to="/">Home</NavButton>
         {pages.map((page) => {
           return (
-            <NavButton key={page} to={`/portfolio/${page}`}>
+            <NavButton key={page} to={`/${page}`}>
               {page}
             </NavButton>
           );
