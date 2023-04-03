@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
   Container,
   Typography,
@@ -11,23 +11,32 @@ import {
 
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-
-    try {
-      const result = await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_USER_ID"
+    emailjs
+      .sendForm(
+        "service_s6q61tt",
+        "contact_form",
+        e.target,
+        "v5s6sK-NINaZ_1wli"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Your message has been sent!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("Error sending email:", error.text);
+          alert("An error occurred. Please try again later.");
+        }
       );
-      console.log(result.text);
-      e.target.reset();
-      alert("Email Sent");
-    } catch (error) {
-      console.log(error.text);
-    }
   };
 
   return (
@@ -63,6 +72,8 @@ const Contact = () => {
                   name="user_name"
                   fullWidth
                   variant="outlined"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -74,6 +85,8 @@ const Contact = () => {
                   name="user_email"
                   fullWidth
                   variant="outlined"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -87,6 +100,8 @@ const Contact = () => {
                   name="message"
                   fullWidth
                   variant="outlined"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </Grid>
               <Grid item xs={12}>
