@@ -37,12 +37,12 @@ const skillsData = [
   {
     title: "Cloud Services",
     skills: [
-      { name: "AWS EC2", icon: FaCloud },
+      { name: "AWS Amplify", icon: FaCloud },
+      { name: "AWS EC2" },
       { name: "Lambda" },
       { name: "S3" },
       { name: "CloudFront" },
       { name: "Route 53" },
-      { name: "AWS Amplify" },
     ],
   },
   {
