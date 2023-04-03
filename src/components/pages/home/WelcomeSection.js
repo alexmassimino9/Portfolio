@@ -1,9 +1,11 @@
 import { Typography, Button, Box, Grid } from "@mui/material";
 import resume from "../../../assets/Amassimino.png";
+import { useNavigate } from "react-router-dom";
 
 function WelcomeSection() {
+  const navigate = useNavigate();
   const handleProjectsClick = () => {
-    // handle routing logic
+    navigate("/projects");
   };
 
   return (
