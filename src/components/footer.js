@@ -15,6 +15,7 @@ const Footer = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        marginTop: "10vh",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
