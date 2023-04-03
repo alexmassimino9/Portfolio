@@ -15,7 +15,7 @@ const projectData = [
   {
     key: 0,
     name: "Portfolio",
-    url: "https://alexmassimino9.github.io/portfolio/",
+    url: "alexmassimino.com",
     img: portfolioImg,
     code: "https://github.com/alexmassimino9/portfolio",
     bio: "Welcome to my portfolio, where I showcase some of my latest projects and endeavors. My portfolio embodies a sleek and minimal design, deliberately highlighting my most recent and noteworthy work.",
