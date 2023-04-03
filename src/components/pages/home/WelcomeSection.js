@@ -42,13 +42,14 @@ function WelcomeSection() {
           maxWidth: "600px",
         }}
       >
-        I specialize in creating modern web applications using React,
-        TypeScript, and AWS services like Amplify, EC2, and DynamoDB. With
-        extensive experience building both RESTful APIs and GraphQL APIs, I
-        leverage frameworks like MUI to ensure a polished and user-friendly
-        experience. My passion for technology motivates me to constantly learn
-        and stay up-to-date with the latest advancements in the industry,
-        providing innovative and effective solutions for my clients.
+        As an experienced developer, I specialize in modern web applications and
+        am proficient in a range of advanced technologies including React,
+        TypeScript, and AWS services such as Amplify, EC2, and DynamoDB. I have
+        a proven track record of developing both RESTful and GraphQL APIs for
+        clients, and prioritize user-friendly and visually appealing design
+        using frameworks like MUI. My passion for technology drives me to stay
+        up-to-date with the latest industry advancements, providing my clients
+        with innovative and effective solutions.
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         <Grid item>
