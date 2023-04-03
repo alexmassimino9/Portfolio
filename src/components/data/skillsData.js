@@ -12,9 +12,9 @@ const skillsData = [
       { name: "React", icon: FaReact },
       { name: "TypeScript" },
       { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "CSS" },
+      { name: "Redux" },
       { name: "MUI" },
+      { name: "React Native" },
     ],
   },
   {
@@ -24,7 +24,6 @@ const skillsData = [
       { name: "Express" },
       { name: "GraphQL" },
       { name: "REST APIs" },
-      { name: "AWS Amplify" },
     ],
   },
   {
@@ -43,6 +42,7 @@ const skillsData = [
       { name: "S3" },
       { name: "CloudFront" },
       { name: "Route 53" },
+      { name: "AWS Amplify" },
     ],
   },
   {
