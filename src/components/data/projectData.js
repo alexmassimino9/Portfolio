@@ -37,7 +37,7 @@ const projectData = [
     img: coachesCodeImg,
     code: "https://github.com/alexmassimino9/CoachesCode",
     bio: "Coach's Code employs a user-friendly chat interface to enhance the user experience for coaches, allowing them to communicate, access resources, and receive support. The platform's intuitive design is accessible for coaches of all levels, empowering them to improve their coaching skills and relationships with their athletes.",
-    tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL",
+    tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL, DynamoDB",
   },
   {
     key: 2,
