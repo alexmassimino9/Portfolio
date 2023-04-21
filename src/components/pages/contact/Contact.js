@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 
 const Contact = () => {
-  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
