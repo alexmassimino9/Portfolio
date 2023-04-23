@@ -8,7 +8,7 @@ const SkillCard = ({ title, skills }) => {
       sx={{
         backgroundColor: "#FFFFFF",
         borderRadius: "10px",
-        padding: "1.5rem",
+        padding: "2rem",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.15)",
         textAlign: "center",
         transition: "transform 0.2s ease-in-out",
@@ -20,9 +20,11 @@ const SkillCard = ({ title, skills }) => {
       <Typography
         variant="h5"
         sx={{
+          fontFamily: "Montserrat, sans-serif",
           fontWeight: 700,
           color: "#2ECC71",
-          marginBottom: "0.5rem",
+          marginBottom: "2rem",
+          fontSize: "2rem",
         }}
       >
         {title}
@@ -37,10 +39,16 @@ const SkillCard = ({ title, skills }) => {
                 alignItems: "center",
               }}
             >
-              {skill.icon && React.createElement(skill.icon, { size: 48 })}
+              {skill.icon &&
+                React.createElement(skill.icon, { size: 48, color: "#2ECC71" })}
               <Typography
                 variant="subtitle1"
-                sx={{ fontWeight: 500, marginTop: "0.5rem" }}
+                sx={{
+                  fontWeight: 500,
+                  marginTop: "1rem",
+                  fontFamily: "Montserrat, sans-serif",
+                  color: "#444444",
+                }}
               >
                 {skill.name}
               </Typography>
@@ -54,14 +62,31 @@ const SkillCard = ({ title, skills }) => {
 
 const SkillsSection = () => {
   return (
-    <Box sx={{ backgroundColor: "#F4F4F4", padding: "2rem" }}>
+    <Box
+      sx={{
+        padding: "4rem",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#F1F1F1",
+      }}
+    >
       <Typography
-        variant="h4"
-        sx={{ fontWeight: 700, marginBottom: "2rem", textAlign: "center" }}
+        variant="h2"
+        sx={{
+          fontWeight: 700,
+          marginBottom: "4rem",
+          textAlign: "center",
+          color: "#444444",
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: "3.5rem",
+        }}
       >
         Skills
       </Typography>
-      <Grid container spacing={4} sx={{ marginTop: "2rem" }}>
+      <Grid container spacing={4}>
         {skillsData.map((skill) => (
           <Grid item xs={12} md={6} lg={4} key={skill.title}>
             <SkillCard title={skill.title} skills={skill.skills} />

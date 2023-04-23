@@ -15,7 +15,6 @@ const Footer = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: "10vh",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -68,7 +67,7 @@ const Footer = () => {
       </Box>
       <Box sx={{ mt: 4 }}>
         <Typography variant="subtitle1" sx={{ fontSize: "20px" }}>
-          © Alexander Massimino 2022
+          © Alexander Massimino 2023
         </Typography>
         <Typography variant="caption" sx={{ fontSize: "12px", mt: 1 }}>
           created by Alexander Massimino - all rights reserved

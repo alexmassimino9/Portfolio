@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <Box
       sx={{
+        height: "100%",
         paddingTop: 10,
         fontFamily: "Roboto, sans-serif",
         paddingBottom: 40,
