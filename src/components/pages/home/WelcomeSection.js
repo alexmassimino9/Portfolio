@@ -1,5 +1,5 @@
 import { Typography, Button, Box, Grid } from "@mui/material";
-import resume from "../../../assets/Amassimino.png";
+import resume from "../../../assets/AmassiminoResume.pdf";
 import { useNavigate } from "react-router-dom";
 
 function WelcomeSection() {
