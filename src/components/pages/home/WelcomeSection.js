@@ -24,10 +24,10 @@ function WelcomeSection() {
       }}
     >
       <Typography variant="h3" sx={{ marginBottom: "1.5rem", fontWeight: 700 }}>
-        Hello, I'm Alex.
+        Alex Massimino
       </Typography>
       <Typography
-        variant="h2"
+        variant="h4"
         sx={{ marginBottom: "1rem", fontWeight: 500, color: "#1A1A1A" }}
       >
         Frontend Developer.
@@ -42,14 +42,14 @@ function WelcomeSection() {
           maxWidth: "600px",
         }}
       >
-        As a skilled frontend developer, I specialize in creating robust and
-        scalable web applications using cutting-edge technologies such as React,
-        Node.js, MongoDB, and Express. I have experience developing RESTful APIs
-        and implementing user-friendly and visually appealing designs using
-        frameworks like Material-UI. My passion for technology drives me to stay
-        up-to-date with the latest industry advancements, providing my clients
-        with innovative and effective solutions. I am committed to delivering
-        high-quality results and always strive to exceed client expectations.
+        As a frontend developer, I specialize in React, TypeScript, MUI, and
+        Redux. My expertise lies in building data-driven user interfaces, , and
+        custom data visualization dashboards. I am proficient in using React
+        hooks and Redux to manage state and have a strong understanding of
+        responsive web design principles. I stay up-to-date with the latest
+        technologies to deliver impactful products. With experience using agile
+        methodologies, Jira, and Git, I work efficiently and effectively in team
+        environments.
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12} sm={6} md={4}>
