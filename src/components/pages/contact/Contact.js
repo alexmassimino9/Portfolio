@@ -13,7 +13,6 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [state, setState] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -54,7 +53,11 @@ const Contact = () => {
             boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.1)",
           }}
         >
-          <Typography variant="h4" fontFamily="Edu VIC WA NT Beginner, cursive">
+          <Typography
+            variant="h4"
+            fontFamily="Edu VIC WA NT Beginner, cursive"
+            sx={{ mb: 2 }}
+          >
             Contact Me
           </Typography>
           <Box
@@ -63,7 +66,7 @@ const Contact = () => {
             sx={{ mt: 2, width: "100%" }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   margin="dense"
                   required
@@ -76,7 +79,7 @@ const Contact = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   margin="dense"
                   required

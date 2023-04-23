@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { WelcomeSection, SkillsSection } from "./";
+import Contact from "../contact/Contact";
 
 const Home = () => {
   return (
@@ -8,17 +9,14 @@ const Home = () => {
         height: "100%",
         paddingTop: 10,
         fontFamily: "Roboto, sans-serif",
-        paddingBottom: 40,
         position: "relative",
         overflow: "hidden",
         background: "linear-gradient(to bottom, #e0e0e0, #111)",
       }}
     >
-      <div>
-        <WelcomeSection />
-        <div style={{ height: 80 }} />
-        <SkillsSection />
-      </div>
+      <WelcomeSection />
+      <SkillsSection />
+      <Contact />
     </Box>
   );
 };

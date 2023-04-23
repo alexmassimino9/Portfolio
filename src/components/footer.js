@@ -65,7 +65,7 @@ const Footer = () => {
           <EmailIcon />
         </IconButton>
       </Box>
-      <Box sx={{ mt: 4 }}>
+      <Box>
         <Typography variant="subtitle1" sx={{ fontSize: "20px" }}>
           © Alexander Massimino 2023
         </Typography>
