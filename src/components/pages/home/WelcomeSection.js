@@ -42,17 +42,17 @@ function WelcomeSection() {
           maxWidth: "600px",
         }}
       >
-        As an experienced developer, I specialize in modern web applications and
-        am proficient in a range of advanced technologies including React,
-        TypeScript, and AWS services such as Amplify, EC2, and DynamoDB. I have
-        a proven track record of developing both RESTful and GraphQL APIs for
-        clients, and prioritize user-friendly and visually appealing design
-        using frameworks like MUI. My passion for technology drives me to stay
+        As a skilled frontend developer, I specialize in creating robust and
+        scalable web applications using cutting-edge technologies such as React,
+        Node.js, MongoDB, and Express. I have experience developing RESTful APIs
+        and implementing user-friendly and visually appealing designs using
+        frameworks like Material-UI. My passion for technology drives me to stay
         up-to-date with the latest industry advancements, providing my clients
-        with innovative and effective solutions.
+        with innovative and effective solutions. I am committed to delivering
+        high-quality results and always strive to exceed client expectations.
       </Typography>
       <Grid container spacing={2} justifyContent="center">
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <Button
             variant="contained"
             color="primary"
@@ -63,13 +63,14 @@ function WelcomeSection() {
               padding: "12px 32px",
               backgroundColor: "#2ECC71",
               "&:hover": { backgroundColor: "#27AE60" },
+              width: "100%",
             }}
             onClick={handleProjectsClick}
           >
             View My Projects
           </Button>
         </Grid>
-        <Grid item>
+        <Grid item xs={12} sm={6} md={4}>
           <Button
             variant="outlined"
             color="primary"
@@ -81,6 +82,7 @@ function WelcomeSection() {
               borderColor: "#2ECC71",
               color: "#2ECC71",
               "&:hover": { borderColor: "#27AE60", color: "#27AE60" },
+              width: "100%",
             }}
             href={resume}
             download
