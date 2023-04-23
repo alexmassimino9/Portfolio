@@ -13,6 +13,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [state, setState] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
