@@ -33,21 +33,21 @@ const projectData = [
   {
     key: 2,
     name: "Coaches Code",
-    url: "https://main.d20njt9dmt5i9j.amplifyapp.com/",
+    url: "https://main.d33yhbkckayihs.amplifyapp.com/",
     img: coachesCodeImg,
     code: "https://github.com/alexmassimino9/CoachesCode",
     bio: "Coach's Code employs a user-friendly chat interface to enhance the user experience for coaches, allowing them to communicate, access resources, and receive support. The platform's intuitive design is accessible for coaches of all levels, empowering them to improve their coaching skills and relationships with their athletes.",
     tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL, DynamoDB",
   },
-  {
-    key: 2,
-    name: "Fiance Dashboard (in progress)",
-    url: "https://github.com/alexmassimino9/fiance-dashboard",
-    img: img,
-    code: "https://github.com/alexmassimino9/fiance-dashboard",
-    bio: "Fiance Dashboard is a React application that allows users to view and edit their profile information. It also allows users to view and edit their tasks. It also allows users to view and edit their coaches. It also allows users to view and edit their projects. It also allows users to view and edit their achievements.",
-    tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL",
-  },
+  // {
+  //   key: 3,
+  //   name: "Finace Dashboard (in progress)",
+  //   url: "https://github.com/alexmassimino9/fiance-dashboard",
+  //   img: img,
+  //   code: "https://github.com/alexmassimino9/fiance-dashboard",
+  //   bio: "Fiance Dashboard is a React application that allows users to view and edit their profile information. It also allows users to view and edit their tasks. It also allows users to view and edit their coaches. It also allows users to view and edit their projects. It also allows users to view and edit their achievements.",
+  //   tech: "React, MUI, AWS(Amplify, Cognito, Lambda), GraphQL",
+  // },
 ];
 
 export default projectData;
