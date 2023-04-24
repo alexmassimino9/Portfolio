@@ -1,150 +1,66 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-  Typography,
-  Box,
-} from "@mui/material";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Menu as MenuIcon } from "@mui/icons-material";
-
-const NavButton = ({ to, children }) => {
-  return (
-    <Button
-      sx={{
-        bgcolor: "transparent",
-        color: "#1A1A1A",
-        textTransform: "none",
-        fontSize: "1.2rem",
-        fontWeight: 500,
-        borderRadius: "8px",
-        transition: "all 0.3s ease-in-out",
-        "&:hover": {
-          bgcolor: "#2ECC71",
-          color: "#FFF",
-        },
-      }}
-      className="link"
-      variant="text"
-      component={Link}
-      to={to}
-    >
-      {children}
-    </Button>
-  );
-};
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 
 const Navbar = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const pages = [
-    { label: "Projects", path: "/projects" },
-    { label: "Contact", path: "/contact" },
-  ];
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
-    <AppBar
-      position="static"
-      sx={{
-        bgcolor: "#FFF",
-        color: "#1A1A1A",
-        borderBottom: "1px solid #F4F4F4",
-      }}
-    >
-      <Toolbar
-        sx={{
-          justifyContent: "space-between",
-          alignItems: "center",
-          height: "10vh",
-        }}
-      >
-        <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          <Typography variant="h5">
-            <Button
-              sx={{
-                bgcolor: "transparent",
-                color: "#1A1A1A",
-                textTransform: "none",
-                fontWeight: 700,
-                transition: "all 0.3s ease-in-out",
-                "&:hover": {
-                  color: "#2ECC71",
-                },
-              }}
-              component={Link}
-              to="/"
-            >
-              My Portfolio
-            </Button>
-          </Typography>
-        </Box>
-        <IconButton
-          sx={{ ml: 2 }}
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          onClick={handleClick}
+    <AppBar position="static" sx={{ bgcolor: "#2ECC71", boxShadow: "none" }}>
+      <Toolbar sx={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <Typography
+          variant="h5"
+          component={Link}
+          to="/"
+          sx={{
+            flexGrow: 1,
+            fontWeight: "bold",
+            color: "#fff",
+            textDecoration: "none",
+          }}
         >
-          <MenuIcon />
-        </IconButton>
-        <Menu
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-        >
-          {pages.map((page) => (
-            <MenuItem
-              key={page.path}
-              onClick={handleClose}
-              component={Link}
-              to={page.path}
-            >
-              {page.label}
-            </MenuItem>
-          ))}
-        </Menu>
-        <Box sx={{ display: { xs: "block", sm: "none" } }}>
-          <Typography variant="h6">
-            <Button
-              sx={{
-                bgcolor: "transparent",
-                color: "#1A1A1A",
-                textTransform: "none",
-                fontWeight: 700,
-                transition: "all 0.3s ease-in-out",
-                "&:hover": {
-                  color: "#2ECC71",
-                },
-              }}
-              component={Link}
-              to="/"
-            >
-              My Portfolio
-            </Button>
-          </Typography>
-        </Box>
-        <Box sx={{ display: { xs: "none", md: "block" } }}>
-          {pages.map((page) => (
-            <NavButton key={page.path} to={page.path}>
-              {page.label}
-            </NavButton>
-          ))}
+          My Portfolio
+        </Typography>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Button
+            variant="contained"
+            component={Link}
+            to="/projects"
+            sx={{
+              margin: "0 15px",
+              bgcolor: "#FFF",
+              color: "#2ECC71",
+              textTransform: "none",
+              fontWeight: 500,
+              "&:hover": {
+                bgcolor: "#FFF",
+                color: "#2ECC71",
+                boxShadow: "none",
+              },
+            }}
+          >
+            Projects
+          </Button>
+          <Button
+            variant="contained"
+            component={Link}
+            to="/contact"
+            sx={{
+              bgcolor: "#FFF",
+              color: "#2ECC71",
+              textTransform: "none",
+              fontWeight: 500,
+              "&:hover": {
+                bgcolor: "#FFF",
+                color: "#2ECC71",
+                boxShadow: "none",
+              },
+            }}
+          >
+            Contact
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>
   );
 };
+
 export default Navbar;
