@@ -43,7 +43,7 @@ function WelcomeSection() {
         }}
       >
         As a frontend developer, I specialize in React, TypeScript, MUI, and
-        Redux. My expertise lies in building data-driven user interfaces, , and
+        Redux. My expertise lies in building data-driven user interfaces, and
         custom data visualization dashboards. I am proficient in using React
         hooks and Redux to manage state and have a strong understanding of
         responsive web design principles. I stay up-to-date with the latest
