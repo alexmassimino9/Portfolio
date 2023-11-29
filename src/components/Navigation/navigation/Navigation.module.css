@@ -6,7 +6,6 @@
     padding-inline: 6rem;
     padding-top: 2rem;
     overflow-x: hidden;
-    border: 2px solid white;
     margin-block-end: 5rem;
 }
 
@@ -37,6 +36,7 @@
     font-weight: lighter;
     font-size: 1.5rem;
 }
+
 @media (max-width: 994px){
     .container {
         padding-inline: 5px;

@@ -4,7 +4,7 @@
     --grey: #63686E;
     --dark-grey: #373640;
     --padding-inline: 12rem;
-    --padding-inline-mobile: 5px;
+    --padding-inline-mobile: 2rem;
     
 }
 /*  font weight
@@ -20,4 +20,7 @@ body {
     background-color: var(--dark-grey);
     color: white;
     font-family: Encode Sans Expanded, sans-serif;
+}
+div {
+    overflow-x: hidden;
 }
