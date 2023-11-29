@@ -1,0 +1,31 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    padding-inline: var(--padding-inline);
+}
+.brand {
+    color: var(--green);
+    font-size: 60px;
+    margin-inline: auto;
+    border: 2px solid red;
+}
+.brand-container {
+    border: 2px solid blue;
+    flex: 1;
+}
+.nav-list {
+    border: 2px solid white;
+    display: flex;
+    margin-block-start: 0;
+    padding-inline: 0;
+}
+.nav-item {
+    border: 2px solid yellow;
+    
+}
+.nav-item > a {
+    color: white;
+}

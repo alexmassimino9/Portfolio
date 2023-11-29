@@ -1,0 +1,16 @@
+:root {
+    --green: #28DF99;
+    --light-grey: #7E97A6;
+    --grey: #63686E;
+    --dark-grey: #373640;
+    --padding-inline:  6rem;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-grey);
+    color: white;
+    font-family: Encode Sans Expanded, sans-serif;
+}
