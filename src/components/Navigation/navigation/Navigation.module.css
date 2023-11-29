@@ -1,16 +1,12 @@
-*{
-    list-style: none;
-    text-decoration: none;
-}
 
 .container{
-    padding-inline: var(--padding-inline);
+    padding-inline: 6rem;
     padding-top: 2rem;
     overflow-x: hidden;
     border: 2px solid white;
 
 }
-.nav-list {
+.navList {
     display: flex;
     margin-block-start: 0;
     padding-inline: 0;
@@ -22,27 +18,27 @@
     margin-inline: auto;
 
 }
-.brand-container {
+.brandContainer {
     flex: 1;
 }
 
-.nav-item {
+.navItem {
     border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-inline-start:  2rem;
 }
-.nav-item > a {
+.navItem > a {
     color: white;
     font-weight: light;
     font-size: 1rem;
 }
 @media (max-width: 994px){
     .container {
-        padding-inline: var(--padding-inline-mobile);
+        padding-inline: 5px;
     }
-    .list-item-mobile {
+    .listItemMobile {
 
     }
     

@@ -1,3 +1,3 @@
 import { Navigation } from "./Navigation";
-
-export { Navigation };
+import { Top } from "./Top";
+export { Navigation, Top };

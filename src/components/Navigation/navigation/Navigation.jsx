@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navigation.css";
+import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
 import { CiMenuBurger } from "react-icons/ci";
 const Navigation = () => {
@@ -9,10 +9,10 @@ const Navigation = () => {
   });
   // const handleMobile = () => {};
   return (
-    <nav className="container">
-      <ul className="nav-list">
-        <li className="brand-container">
-          <a className="brand" href="/">
+    <nav className={style.container}>
+      <ul className={style.navList}>
+        <li className={style.brandContainer}>
+          <a className={style.brand} href="/">
             AM
           </a>
         </li>
@@ -21,14 +21,21 @@ const Navigation = () => {
             <CiMenuBurger
               onPress=""
               width="20px"
-              className="mobile-btn"
+              className={style.mobileBtn}
               size="30"
             />
           </li>
         ) : (
           links.map((item, index) => {
             return (
-              <li className="nav-item list-item list-item-mobile" key={index}>
+              <li
+                className={[
+                  style.navItem,
+                  style.listItem,
+                  style.listItemMobile,
+                ]}
+                key={index}
+              >
                 <a href={`/`}>{item}</a>
               </li>
             );

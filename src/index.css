@@ -3,7 +3,7 @@
     --light-grey: #7E97A6;
     --grey: #63686E;
     --dark-grey: #373640;
-    --padding-inline: 6rem;
+    --padding-inline: 10rem;
     --padding-inline-mobile: 5px;
     
 }
@@ -12,6 +12,11 @@
 400 - light
 
 */
+
+*{
+    list-style: none !important;
+    text-decoration: none !important;
+}
 body {
     margin: 0;
     padding: 0;

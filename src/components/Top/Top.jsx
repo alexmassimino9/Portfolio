@@ -1,0 +1,25 @@
+import React from "react";
+import styles from "./Top.module.css";
+import { Button } from "../common";
+
+const Top = () => {
+  return (
+    <section className={styles.container}>
+      <div className={styles.topContent}>
+        <h1>Alex Massimino</h1>
+        <h2>Frontend Engineer</h2>
+        <p>
+          Experienced Frontend Engineer specializing in crafting engaging,
+          data-driven web applications. Combining cutting-edge technologies with
+          a keen eye for design to create intuitive and dynamic user
+          experiences.
+        </p>
+      </div>
+
+      <Button title="Projects" />
+      <Button title="Resume" />
+    </section>
+  );
+};
+
+export default Top;
