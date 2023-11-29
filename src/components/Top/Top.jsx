@@ -15,9 +15,10 @@ const Top = () => {
           experiences.
         </p>
       </div>
-
-      <Button title="Projects" />
-      <Button title="Resume" />
+      <div className={styles.btnContainer}>
+        <Button title="Projects" />
+        <Button title="Resume" />
+      </div>
     </section>
   );
 };
