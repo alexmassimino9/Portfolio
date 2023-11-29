@@ -5,27 +5,45 @@
 
 .container{
     padding-inline: var(--padding-inline);
-}
-.brand {
-    color: var(--green);
-    font-size: 60px;
-    margin-inline: auto;
-    border: 2px solid red;
-}
-.brand-container {
-    border: 2px solid blue;
-    flex: 1;
+    padding-top: 2rem;
+    overflow-x: hidden;
+    border: 2px solid white;
+
 }
 .nav-list {
-    border: 2px solid white;
     display: flex;
     margin-block-start: 0;
     padding-inline: 0;
 }
+.brand {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-inline: auto;
+
+}
+.brand-container {
+    flex: 1;
+}
+
 .nav-item {
-    border: 2px solid yellow;
-    
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline-start:  2rem;
 }
 .nav-item > a {
     color: white;
+    font-weight: light;
+    font-size: 1rem;
+}
+@media (max-width: 994px){
+    .container {
+        padding-inline: var(--padding-inline-mobile);
+    }
+    .list-item-mobile {
+
+    }
+    
 }
