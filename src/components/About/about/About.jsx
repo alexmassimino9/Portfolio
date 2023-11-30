@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./About.module.css";
-import { Header, Button } from "../common";
-import portrait from "../../assets/images/portrait.jpg";
-
+import { Header, Button } from "../../common";
+import portrait from "../../../assets/images/portrait.jpg";
+import { Tech } from "../";
 const About = () => {
   return (
     <section className={style.container}>
@@ -29,6 +29,7 @@ const About = () => {
           <img src={portrait} alt="Alex Massimino" />
         </div>
       </main>
+      <Tech />
     </section>
   );
 };

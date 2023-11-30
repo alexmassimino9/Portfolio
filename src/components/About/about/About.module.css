@@ -1,5 +1,5 @@
 .container{
-
+margin-block-end: 5rem;
 }
 .content {
     display: flex;
@@ -8,6 +8,7 @@
     flex-direction: row;
     padding-inline: var(--padding-inline);
     margin-block: auto;
+    margin-block-end: 3rem;
 }
 .textContent {
     flex: 1.5;
