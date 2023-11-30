@@ -19,7 +19,7 @@ const Navigation = () => {
         {isMobile ? (
           <li>
             <CiMenuBurger
-              onPress=""
+              // onClick=""
               width="20px"
               className={style.mobileBtn}
               size="30"
