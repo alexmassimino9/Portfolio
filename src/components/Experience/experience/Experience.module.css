@@ -34,3 +34,17 @@
 .expTitle {
     color: var(--green);
 }
+
+.expBottom {
+    border: 2px solid red;
+
+}
+.expBottom > h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.activeExp {
+    text-decoration: underline;
+    text-decoration-color: var(--green); /* Uses the --green color variable */
+  }

@@ -9,29 +9,34 @@ const Experience = () => {
   const handleExpChange = (exp) => {
     setCurrentExp(exp);
   };
+
   return (
     <main className={style.container}>
       <Header title="Experience" />
       <div className={style.expContainer}>
         <div className={style.expBox}>
           <ul className={style.expTop}>
-            {expList.map((exp) => {
-              return (
-                <li
-                  key={exp.title}
-                  className={style.expTitle}
-                  onClick={() => handleExpChange(exp)}
-                >
-                  {exp.title}
-                </li>
-              );
-            })}
+            {expList.map((exp) => (
+              <li
+                key={exp.title}
+                className={`${style.expTitle} ${
+                  exp.title === currentExp.title ? style.activeExp : ""
+                }`}
+                onClick={() => handleExpChange(exp)}
+              >
+                {exp.title}
+              </li>
+            ))}
           </ul>
           <div className={style.expBottom}>
-            <h3>{currentExp.position}</h3>
-            {currentExp.data.map((item) => {
-              return <li>{item}</li>;
-            })}
+            <h3>
+              {currentExp.position} @
+              <span className="expCompany">{currentExp.title}</span>
+            </h3>
+            <p> {currentExp.tenure}</p>
+            {currentExp.data.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </div>
         </div>
       </div>
