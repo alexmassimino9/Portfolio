@@ -11,7 +11,7 @@ const Experience = () => {
   };
 
   return (
-    <main className={style.container}>
+    <main id="experience" className={style.container}>
       <Header title="Experience" />
       <div className={style.expContainer}>
         <div className={style.expBox}>

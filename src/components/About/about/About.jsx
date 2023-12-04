@@ -5,7 +5,7 @@ import portrait from "../../../assets/images/portrait.jpg";
 import { Tech } from "../";
 const About = () => {
   return (
-    <section className={style.container}>
+    <section id="about" className={style.container}>
       <Header title="About" />
       <main className={style.content}>
         <div className={style.textContent}>

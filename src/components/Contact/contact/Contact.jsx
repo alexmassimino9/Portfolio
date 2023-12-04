@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={style.container}>
+    <section id="contact" className={style.container}>
       <Header title="Contact" />
       <main className={style.contactContainer}>
         <form className={style.contactForm} onSubmit={sendEmail}>

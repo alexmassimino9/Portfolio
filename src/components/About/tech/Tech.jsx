@@ -12,31 +12,31 @@ const Tech = () => {
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "Python",
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "Node.js",
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "SQL",
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "MongoDB",
       img: "./js.png",
     },
     {
-      title: "TypeScript",
+      title: "Wordpress",
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "Chart.js",
       img: "./js.png",
     },
     {
-      title: "Javascript",
+      title: "Git",
       img: "./js.png",
     },
   ];

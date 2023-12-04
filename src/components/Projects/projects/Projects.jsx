@@ -6,7 +6,7 @@ import { Button } from "../../common/";
 
 const Projects = () => {
   return (
-    <section className={style.container}>
+    <section id="projects" className={style.container}>
       <Header title="Projects" />
       <div className={style.projectContainer}>
         <h4 className={style.featuredProjects}>Featured Projects</h4>

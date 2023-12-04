@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
 import { CiMenuBurger } from "react-icons/ci";
+
 const Navigation = () => {
-  const links = ["About", "Experience", "Projects", "Services", "Contact"];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const links = ["about", "experience", "projects", "contact"];
   const isMobile = useMediaQuery({
     query: "(max-width: 996px)",
   });
+
   return (
     <nav className={style.container}>
       <ul className={style.navList}>
@@ -16,17 +21,32 @@ const Navigation = () => {
           </a>
         </li>
         {isMobile ? (
-          <li>
-            <CiMenuBurger width="40px" className={style.mobileBtn} size="30" />
-          </li>
+          <>
+            <li>
+              <CiMenuBurger
+                onClick={toggleMenu}
+                className={style.mobileBtn}
+                size="35"
+              />
+            </li>
+            {isMenuOpen && (
+              <div className={style.mobileMenu}>
+                {links.map((item, index) => (
+                  <li className={style.navItem} key={index}>
+                    <a href={`#${item}`} onClick={() => setIsMenuOpen(false)}>
+                      {item.toUpperCase()}
+                    </a>
+                  </li>
+                ))}
+              </div>
+            )}
+          </>
         ) : (
-          links.map((item, index) => {
-            return (
-              <li className={style.navItem} key={index}>
-                <a href={`/`}>{item}</a>
-              </li>
-            );
-          })
+          links.map((item, index) => (
+            <li className={style.navItem} key={index}>
+              <a href={`#${item}`}>{item.toUpperCase()}</a>
+            </li>
+          ))
         )}
       </ul>
     </nav>
