@@ -30,12 +30,14 @@ const Experience = () => {
           </ul>
           <div className={style.expBottom}>
             <h3>
-              {currentExp.position} @
-              <span className="expCompany">{currentExp.title}</span>
+              {currentExp.position}
+              <span className={style.expCompany}> @ {currentExp.title}</span>
             </h3>
             <p> {currentExp.tenure}</p>
             {currentExp.data.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className={style.expItem}>
+                {item}
+              </li>
             ))}
           </div>
         </div>

@@ -1,6 +1,5 @@
 
 .container {
-    border: 2px solid red;
 }
 
 .expContainer {
@@ -8,16 +7,13 @@
     padding-inline: var(--padding-inline)
 }
 .expBox {
-    height: 400px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    border-radius: 12px;
     background-color: #D9D9D9;
     -webkit-box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
     box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
 }
 .expTop {
-    border: 1px solid yellow;
     -webkit-box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
     box-shadow: -7px -5px 11px 0px rgba(0,0,0,0.6);
@@ -36,15 +32,23 @@
 }
 
 .expBottom {
-    border: 2px solid red;
-
+    padding: 1rem;
+}
+.expCompany{ 
+    color: var(--green);
 }
 .expBottom > h3 {
     color: black;
     font-weight: bold;
     font-size: 2rem;
 }
+.expItem {
+    margin-block-end: 1rem;
+    color: black;
+    font-weight: 300;
+    list-style: disc;
+}
 .activeExp {
     text-decoration: underline;
-    text-decoration-color: var(--green); /* Uses the --green color variable */
+    text-decoration-color: var(--green);
   }
