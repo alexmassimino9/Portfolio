@@ -85,6 +85,41 @@
     text-align: center;
 }
 
-.demoButton:hover, .codeButton:hover {
-    background-color: var(--light-green);
+@media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectContainer {
+        padding-inline: 1rem;
+    }
+
+    .projectContent {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .projectLeft, .projectRight {
+        flex: none; /* Reset flex */
+        width: 100%; /* Full width on small screens */
+    }
+
+    .img {
+        width: 100%; /* Make image responsive */
+        max-width: 100%; /* Allow image to scale down */
+    }
+
+    .projectLinks {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .demoButton, .codeButton {
+        width: 100%; /* Full width buttons */
+    }
+
+    .techContainer {
+        flex-wrap: wrap; /* Wrap tech items */
+        justify-content: center; /* Center tech items */
+    }
 }

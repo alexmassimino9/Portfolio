@@ -3,4 +3,5 @@ import { Top } from "./Top";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { Projects } from "./Projects";
-export { Navigation, Top, About, Experience, Projects };
+import { Contact } from "./Contact";
+export { Navigation, Top, About, Experience, Projects, Contact };

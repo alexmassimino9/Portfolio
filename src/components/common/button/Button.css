@@ -11,10 +11,13 @@ button {
 }
 button > a {
     color: var(--green);
+    height: 100%;
+    width: 100%;
 }
 button:hover, button a:hover {
     color: white;
 }
+
 
 button:hover {
     background-color: var(--green);
