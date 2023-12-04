@@ -3,11 +3,10 @@ import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
 import { CiMenuBurger } from "react-icons/ci";
 const Navigation = () => {
-  const links = ["About", "Experience", "Work", "Services", "Contact"];
+  const links = ["About", "Experience", "Projects", "Services", "Contact"];
   const isMobile = useMediaQuery({
     query: "(max-width: 996px)",
   });
-  // const handleMobile = () => {};
   return (
     <nav className={style.container}>
       <ul className={style.navList}>
@@ -18,12 +17,7 @@ const Navigation = () => {
         </li>
         {isMobile ? (
           <li>
-            <CiMenuBurger
-              // onClick=""
-              width="20px"
-              className={style.mobileBtn}
-              size="30"
-            />
+            <CiMenuBurger width="40px" className={style.mobileBtn} size="30" />
           </li>
         ) : (
           links.map((item, index) => {

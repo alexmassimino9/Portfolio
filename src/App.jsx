@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Navigation, Top, About, Experience } from "./components";
+import { Navigation, Top, About, Experience, Projects } from "./components";
 function App() {
   return (
     <>
@@ -8,6 +8,7 @@ function App() {
       <Top />
       <About />
       <Experience />
+      <Projects />
     </>
   );
 }
