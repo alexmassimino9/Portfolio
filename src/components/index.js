@@ -5,3 +5,5 @@ import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
 export { Navigation, Top, About, Experience, Projects, Contact };
+import Footer from "./Footer";
+
