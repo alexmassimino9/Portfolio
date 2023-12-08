@@ -16,6 +16,7 @@ button > a {
 }
 button:hover, button:hover > a {
     color: white;
+    cursor: pointer;
     transform: translateY(-2px);
 }
 

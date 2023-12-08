@@ -30,7 +30,9 @@
     color: var(--green);
     font-size: 1rem; 
 }
-
+.expTitle, .activeExp {
+    cursor: pointer;
+}
 .expBottom {
     padding: 1rem;
 }
