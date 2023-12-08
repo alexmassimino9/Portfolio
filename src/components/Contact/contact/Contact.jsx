@@ -47,11 +47,22 @@ const Contact = () => {
       <Header title="Contact" />
       <main className={style.contactContainer}>
         <form className={style.contactForm} onSubmit={sendEmail}>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="firstName"
+            name="firstName"
+            placeholder="John"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Doe"
             value={formData.name}
             onChange={handleChange}
             required
@@ -62,7 +73,7 @@ const Contact = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="email"
+            placeholder="john@example.com"
             value={formData.email}
             onChange={handleChange}
             required
@@ -72,6 +83,7 @@ const Contact = () => {
           <textarea
             id="message"
             name="message"
+            placeholder="Enter Message: "
             value={formData.message}
             onChange={handleChange}
             required
