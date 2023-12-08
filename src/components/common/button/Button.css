@@ -14,10 +14,10 @@ button > a {
     height: 100%;
     width: 100%;
 }
-button:hover, button a:hover {
+button:hover, button:hover > a {
     color: white;
+    transform: translateY(-2px);
 }
-
 
 button:hover {
     background-color: var(--green);
