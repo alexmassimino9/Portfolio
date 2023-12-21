@@ -5,6 +5,7 @@ import { projects } from "../../../data/data";
 import { Button } from "../../common/";
 
 const Projects = () => {
+  // TODO: refactor into multiple smaller components to reduce complexity
   return (
     <section id="projects" className={style.container}>
       <Header title="Projects" />
