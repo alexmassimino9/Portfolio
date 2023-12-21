@@ -1,10 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ title, onClick, href, type }) => {
+const Button = ({ title, onClick, href, type, download }) => {
   return (
     <button onClick={onClick} type={type}>
-      <a href={href}> {title}</a>
+      <a href={href} download={download}>
+        {title}
+      </a>
     </button>
   );
 };
