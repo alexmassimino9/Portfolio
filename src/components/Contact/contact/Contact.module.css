@@ -3,8 +3,8 @@ margin-block: 5rem;
 }
 
 .contactContainer {
-    width: 90%;
-    max-width: 500px; /* Adjust based on your design preference */
+    width: 100%;
+    max-width: 600px; 
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,9 +23,8 @@ margin-block: 5rem;
 
 .contactForm input,
 .contactForm textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid white;
+    padding: 1rem;
+    border: none;
     border-radius: 5px;
 }
 
@@ -33,50 +32,10 @@ margin-block: 5rem;
     height: 150px;
     resize: vertical;
 }
-
-/* Existing Styles */
-
-.container {
-    margin-block: 5rem;
-  }
-  
-  .contactContainer {
-    width: 90%;
-    max-width: 500px; /* Adjust based on your design preference */
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contactForm label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contactForm input,
-  .contactForm textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
-  
-  .contactForm textarea {
-    height: 150px;
-    resize: vertical;
-  }
-  
-@media(max-width: 994px) {
+@media(max-width: 758px) {
 
     .contactContainer {
-        max-width: 300px;
-        padding: 5px;
+        max-width: 70%;
     }
 
     .contactForm input,

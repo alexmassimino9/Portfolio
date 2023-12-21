@@ -23,7 +23,7 @@ const About = () => {
             dedicating time to coaching youth teams, a commitment that reflects
             my enthusiasm for team building, collaboration and competitivnes.
           </p>
-          <Button title="Contact Me" />
+          <Button title="Contact Me" href={`/#contact`} />
         </div>
         <div className={style.imageContent}>
           <img src={portrait} alt="Alex Massimino" />
