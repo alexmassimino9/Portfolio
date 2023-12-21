@@ -1,9 +1,15 @@
 import React from "react";
-import "./Button.css";
+import style from "./Button.module.css";
 
 const Button = ({ title, onClick, href, type, download }) => {
   return (
-    <a href={href} download={download} onClick={onClick} type={type}>
+    <a
+      className={style.btn}
+      href={href}
+      download={download}
+      onClick={onClick}
+      type={type}
+    >
       {title}
     </a>
   );
