@@ -71,5 +71,6 @@ const projects = [
     demoUrl: "/",
   },
 ];
+const links = ["about", "experience", "projects", "contact"];
 
-export { expList, projects };
+export { expList, projects, links };

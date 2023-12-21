@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Top.module.css";
 import { Button } from "../common";
 import resume from "../../assets/AMassiminoResume.pdf";
-
 const Top = () => {
   return (
     <section className={styles.container}>
@@ -17,7 +16,7 @@ const Top = () => {
         </p>
       </div>
       <div className={styles.btnContainer}>
-        <Button title="Projects" />
+        <Button title="Projects" href={`/#projects`} />
         <Button
           title="Resume"
           href={resume}

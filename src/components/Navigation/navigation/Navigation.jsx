@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
 import { CiMenuBurger } from "react-icons/ci";
-
+import { links } from "../../../data/data";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const links = ["about", "experience", "projects", "contact"];
   const isMobile = useMediaQuery({
     query: "(max-width: 996px)",
   });
