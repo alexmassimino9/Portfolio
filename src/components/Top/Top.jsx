@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Top.module.css";
 import { Button } from "../common";
+import resume from "../../assets/AMassiminoResume.pdf";
 
 const Top = () => {
   return (
@@ -17,7 +18,12 @@ const Top = () => {
       </div>
       <div className={styles.btnContainer}>
         <Button title="Projects" />
-        <Button title="Resume" />
+        <Button
+          title="Resume"
+          href={resume}
+          target="_blank"
+          download={resume}
+        />
       </div>
     </section>
   );

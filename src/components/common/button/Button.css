@@ -1,5 +1,5 @@
 
-button {
+a {
     background-color: var(--dark);
     border: 2px solid var(--green);
     color: var(--green);
@@ -9,18 +9,13 @@ button {
     font-size: 1.5rem;
     font-weight: light;
 }
-button > a {
-    color: var(--green);
-    height: 100%;
-    width: 100%;
-}
-button:hover, button:hover > a {
+ a:hover {
     color: white;
     cursor: pointer;
     transform: translateY(-2px);
 }
 
-button:hover {
+a:hover {
     background-color: var(--green);
     color: white;
     border: 2px solid var(--green);
