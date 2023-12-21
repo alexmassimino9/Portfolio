@@ -15,9 +15,6 @@ margin-block-end: 5rem;
     display: flex;
     flex-direction: column;
 }
-.textContent > Button {
-    margin-inline: auto;
-}
 
 .textContent > p {
     
@@ -36,8 +33,6 @@ margin-block-end: 5rem;
     width: 100%;
     flex: 1;
 }
-
-
 @media(max-width:994px){
     
     .content {

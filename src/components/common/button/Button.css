@@ -8,6 +8,9 @@ a {
     text-wrap: wrap;
     font-size: 1.5rem;
     font-weight: light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  a:hover {
     color: white;
