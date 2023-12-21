@@ -21,7 +21,7 @@ const About = () => {
             my capabilities in delivering comprehensive digital solutions.
             Beyond my professional pursuits, I am passionate about soccer,
             dedicating time to coaching youth teams, a commitment that reflects
-            my enthusiasm for team building, collaboration and competitivnes.
+            my enthusiasm for team building, collaboration and competitiveness.
           </p>
           <Button title="Contact Me" href={`/#contact`} />
         </div>
