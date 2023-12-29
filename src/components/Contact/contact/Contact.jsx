@@ -5,7 +5,8 @@ import { Header, Button } from "../../common";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     message: "",
   });
@@ -16,7 +17,7 @@ const Contact = () => {
 
   const clearForm = () => {
     alert("Message Sent");
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", message: "" });
   };
 
   const sendEmail = (e) => {
@@ -32,12 +33,10 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          // Handle success
           clearForm();
         },
         (error) => {
           console.log(error.text);
-          // Handle errors
         }
       );
   };
@@ -53,7 +52,7 @@ const Contact = () => {
             id="firstName"
             name="firstName"
             placeholder="John"
-            value={formData.name}
+            value={formData.firstName} // Updated to use formData.firstName
             onChange={handleChange}
             required
           />
@@ -63,7 +62,7 @@ const Contact = () => {
             id="lastName"
             name="lastName"
             placeholder="Doe"
-            value={formData.name}
+            value={formData.lastName} // Updated to use formData.lastName
             onChange={handleChange}
             required
           />
