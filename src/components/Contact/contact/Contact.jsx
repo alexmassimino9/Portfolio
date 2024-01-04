@@ -15,6 +15,7 @@ const Contact = () => {
       form.current,
       "v5s6sK-NINaZ_1wli"
     );
+    alert("Form submited");
   };
 
   return (
