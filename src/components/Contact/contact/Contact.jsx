@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import style from "./Contact.module.css";
-import { Header, Button } from "../../common";
+import { Header } from "../../common";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +45,7 @@ const Contact = () => {
     <section id="contact" className={style.container}>
       <Header title="Contact" />
       <main className={style.contactContainer}>
-        <form className={style.contactForm} onSubmit={sendEmail}>
+        <form className={style.contactForm} onSubmit={() => sendEmail()}>
           <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
@@ -62,7 +62,7 @@ const Contact = () => {
             id="lastName"
             name="lastName"
             placeholder="Doe"
-            value={formData.lastName} // Updated to use formData.lastName
+            value={formData.lastName}
             onChange={handleChange}
             required
           />
@@ -88,7 +88,16 @@ const Contact = () => {
             required
           ></textarea>
 
-          <Button title="Submit" type="submit" className={style.submitButton} />
+          <button
+            title="Submit"
+            type="submit"
+            className={style.submitButton}
+            onClick={(e) => {
+              sendEmail(e.target);
+            }}
+          >
+            Submit
+          </button>
         </form>
       </main>
     </section>
