@@ -45,7 +45,7 @@ const projects = [
     tech: ["React", "AWS Amplify", "GraphQL", "DynamoDB"],
     overview:
       "Coaches Code is an innovative web application designed to bridge the gap between experienced coaches and students seeking personalized tutoring. Utilizing the latest web technologies, it offers a platform for coaches to offer their services and for students to find the right guidance for their educational needs.",
-    demoUrl: "https://main.d33yhbkckayihs.amplifyapp.com/", // Replace with the actual demo URL
+    demoUrl: "", // Replace with the actual demo URL
     codeUrl: "https://github.com/alexmassimino9/CoachesCode", // Replace with the actual GitHub URL
   },
   {
