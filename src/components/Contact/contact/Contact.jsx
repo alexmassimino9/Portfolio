@@ -1,81 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import style from "./Contact.module.css";
 import { Header } from "../../common";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const clearForm = () => {
-    alert("Message Sent");
-    setFormData({ firstName: "", lastName: "", email: "", message: "" });
-  };
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_zwat4g4",
-        "contact_form",
-        e.target,
-        "v5s6sK-NINaZ_1wli"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearForm();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "service_6cjmlpx",
+      "contact_form",
+      form.current,
+      "v5s6sK-NINaZ_1wli"
+    );
   };
 
   return (
     <section id="contact" className={style.container}>
       <Header title="Contact" />
       <main className={style.contactContainer}>
-        <form className={style.contactForm} onSubmit={() => sendEmail()}>
+        <form className={style.contactForm} onSubmit={sendEmail} ref={form}>
           <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
-            id="firstName"
-            name="firstName"
+            id="user_firstName"
+            name="user_firstName"
             placeholder="John"
-            value={formData.firstName} // Updated to use formData.firstName
-            onChange={handleChange}
-            required
           />
           <label htmlFor="lastName">Last Name:</label>
           <input
             type="text"
-            id="lastName"
-            name="lastName"
+            id="user_lastName"
+            name="user_lastName"
             placeholder="Doe"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
           />
 
           <label htmlFor="email">Email:</label>
           <input
             type="email"
-            id="email"
-            name="email"
+            id="user_email"
+            name="user_email"
             placeholder="john@example.com"
-            value={formData.email}
-            onChange={handleChange}
-            required
           />
 
           <label htmlFor="message">Message:</label>
@@ -83,21 +50,9 @@ const Contact = () => {
             id="message"
             name="message"
             placeholder="Enter Message: "
-            value={formData.message}
-            onChange={handleChange}
-            required
           ></textarea>
 
-          <button
-            title="Submit"
-            type="submit"
-            className={style.submitButton}
-            onClick={(e) => {
-              sendEmail(e.target);
-            }}
-          >
-            Submit
-          </button>
+          <input title="Submit" type="submit" className={style.submitButton} />
         </form>
       </main>
     </section>
