@@ -33,6 +33,7 @@
 }
 .navItem > a {
     border: none;
+    text-transform: capitalize;
     color: white;
     font-weight: lighter;
     font-size: 1.5rem;

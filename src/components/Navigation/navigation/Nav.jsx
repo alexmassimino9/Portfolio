@@ -1,7 +1,18 @@
 import React from "react";
-
+import { links } from "../../../data/data";
+import style from "./Navigation.module.css";
 const Nav = () => {
-  return <div>Nav</div>;
+  return (
+    <ul className={style.navList}>
+      {links.map((link, index) => {
+        return (
+          <li className={style.navItem} key={index}>
+            <a>{link}</a>
+          </li>
+        );
+      })}
+    </ul>
+  );
 };
 
 export default Nav;

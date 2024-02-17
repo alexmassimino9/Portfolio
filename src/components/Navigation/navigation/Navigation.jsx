@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
-import { links } from "../../../data/data";
 import { Nav, MobileNav } from "../";
 const Navigation = () => {
   const isMobile = useMediaQuery({
