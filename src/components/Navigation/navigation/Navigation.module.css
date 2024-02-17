@@ -41,10 +41,8 @@
     text-decoration: underline;
 }
 .mobileBtn {
-    border: 2px solid red;
 }
-.mobileBtn:hover {
-}
+
 @media (max-width: 994px){
     .container {
         padding-inline: 5px;

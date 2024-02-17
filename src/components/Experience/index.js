@@ -1,3 +1,3 @@
-import Experience from "./experience/Experience";
+import Experience from "./Experience";
 
 export { Experience };

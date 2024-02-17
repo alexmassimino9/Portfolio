@@ -1,3 +1,3 @@
-import Contact from "./contact/Contact";
+import Contact from "./Contact";
 
 export { Contact };

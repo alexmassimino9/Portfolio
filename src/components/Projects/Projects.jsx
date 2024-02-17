@@ -1,8 +1,7 @@
 import React from "react";
 import style from "./Projects.module.css";
-import { Header } from "../../common/";
-import { projects } from "../../../data/data";
-import { Button } from "../../common/";
+import { Header, Button } from "../common/";
+import { projects } from "../../data/data";
 
 const Projects = () => {
   // TODO: refactor into multiple smaller components to reduce complexity

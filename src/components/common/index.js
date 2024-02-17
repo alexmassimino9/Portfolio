@@ -1,4 +1,4 @@
-import Button from "./button/Button";
-import Header from "./header/Header";
+import Button from "./Button";
+import Header from "./Header";
 
 export { Button, Header };

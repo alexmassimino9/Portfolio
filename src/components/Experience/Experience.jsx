@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./Experience.module.css";
-import { Header } from "../../common";
-import { expList } from "../../../data/data";
+import { Header } from "../common";
+import { expList } from "../../data/data";
 
 const Experience = () => {
   const [currentExp, setCurrentExp] = useState(expList[0]);
