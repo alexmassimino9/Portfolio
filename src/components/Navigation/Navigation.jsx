@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
-import { CiMenuBurger } from "react-icons/ci";
+import { CiMenuFries } from "react-icons/ci";
 import { links } from "../../../data/data";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,10 +22,10 @@ const Navigation = () => {
         {isMobile ? (
           <>
             <li>
-              <CiMenuBurger
+              <CiMenuFries
                 onClick={toggleMenu}
                 className={style.mobileBtn}
-                size="35"
+                size="50"
               />
             </li>
             {isMenuOpen && (

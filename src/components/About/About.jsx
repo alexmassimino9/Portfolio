@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./About.module.css";
-import { Header, Button } from "../../common";
+import { Header, Button } from "../common";
 import portrait from "../../../assets/images/portrait.jpg";
-import { Tech } from "../";
+import { Tech } from ".";
 const About = () => {
   return (
     <section id="about" className={style.container}>

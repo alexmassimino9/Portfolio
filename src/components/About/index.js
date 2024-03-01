@@ -1,3 +1,3 @@
-import About from "./about/About";
+import About from "./About";
 import Tech from "./tech/Tech";
 export { About, Tech };
