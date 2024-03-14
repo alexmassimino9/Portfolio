@@ -5,10 +5,10 @@ import { CiMenuFries } from "react-icons/ci";
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  return isMenuOpen ? (
-    <>
-      <div>enter side menu</div>
-    </>
+  return !isMenuOpen ? ( // negate this to fix
+    <aside className={style.mobileNavContainer}>
+      <button onClick={() => toggleMenu()}>Close menu</button>
+    </aside>
   ) : (
     <CiMenuFries
       size={50}
