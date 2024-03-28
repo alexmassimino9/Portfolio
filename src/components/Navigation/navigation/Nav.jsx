@@ -7,7 +7,7 @@ const Nav = () => {
       {links.map((link, index) => {
         return (
           <li className={style.navItem} key={index}>
-            <a>{link}</a>
+            <a href={`#${link}`}>{link}</a>
           </li>
         );
       })}

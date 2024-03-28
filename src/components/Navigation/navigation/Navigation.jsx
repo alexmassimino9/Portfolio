@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./Navigation.module.css";
 import { useMediaQuery } from "react-responsive";
 import { Nav, MobileNav } from "../";
