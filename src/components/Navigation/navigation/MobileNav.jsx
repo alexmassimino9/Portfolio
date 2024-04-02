@@ -6,16 +6,22 @@ import { links } from "../../../data/data";
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  return !isMenuOpen ? ( // negate this to fix
+
+  return isMenuOpen ? (
     <aside className={style.mobileNavContainer}>
-      <ul className={style.navList}>
-        {links.map((link, index) => {
-          return (
-            <li className={style.navItem} key={index}>
-              <a>{link}</a>
-            </li>
-          );
-        })}
+      <CiMenuFries
+        size={50}
+        className={style.mobileNavBtn}
+        onClick={() => toggleMenu()}
+      />
+      <ul className={style.mobileNavList}>
+        {links.map((link, index) => (
+          <li className={style.navItem} key={index}>
+            <a href={`#${link}`} onClick={() => toggleMenu()}>
+              {link}
+            </a>
+          </li>
+        ))}
       </ul>
     </aside>
   ) : (

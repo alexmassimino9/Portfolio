@@ -45,8 +45,8 @@ const projects = [
     tech: ["React", "AWS Amplify", "GraphQL", "DynamoDB"],
     overview:
       "Coaches Code is an innovative web application designed to bridge the gap between experienced coaches and students seeking personalized tutoring. Utilizing the latest web technologies, it offers a platform for coaches to offer their services and for students to find the right guidance for their educational needs.",
-    demoUrl: "", // Replace with the actual demo URL
-    codeUrl: "https://github.com/alexmassimino9/CoachesCode", // Replace with the actual GitHub URL
+    demoUrl: "",
+    codeUrl: "https://github.com/alexmassimino9/CoachesCode",
   },
   {
     title: "Personal Portfolio",
@@ -56,8 +56,8 @@ const projects = [
     tech: ["React", "AWS", "JavaScript", "Material UI"],
     overview:
       "This personal portfolio is a reflection of my growth as a developer. It showcases a range of projects, each illustrating different skills and technologies. Designed with attention to detail, the portfolio represents both my technical abilities and my journey in the world of web development.",
-    demoUrl: "http://alexmassimino.com", // Replace with your portfolio URL
-    codeUrl: "https://github.com/alexmassimino9/portfolio", // Replace with the GitHub URL of your portfolio
+    demoUrl: "http://alexmassimino.com",
+    codeUrl: "https://github.com/alexmassimino9/portfolio",
   },
   {
     title: "Taskify",
@@ -67,10 +67,9 @@ const projects = [
     tech: ["React", "TypeScript", "CSS", "HTML"],
     overview:
       "Taskify is a sleek, user-friendly task management application, highlighting my first use of TypeScript in conjunction with React. The app features a clean interface for managing daily tasks, with capabilities for adding, editing, and marking tasks as complete.",
-    codeUrl: "https://github.com/alexmassimino9/react-typescript-task-app", // Based on the GitHub info you provided
+    codeUrl: "https://github.com/alexmassimino9/react-typescript-task-app",
     demoUrl: "/",
   },
 ];
 const links = ["about", "experience", "projects", "contact"];
-
 export { expList, projects, links };
